@@ -27,7 +27,7 @@ const { entry, kind } = Astro.props;
 const id = `e${entry.num}`;
 ---
 
-<article class="entry" id={id}>
+<article class="entry" id={id} data-strength={entry.strength ?? ''}>
   <header class="entry__head">
     <span class="entry__num" aria-hidden="true">{String(entry.num).padStart(3, '0')}</span>
     <h3 class="entry__title">{entry.title}</h3>

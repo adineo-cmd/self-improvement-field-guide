@@ -1,0 +1,239 @@
+---
+import Base from '../layouts/Base.astro';
+import tabs from '../data/tabs.json';
+
+interface Drill {
+  chapter: string;
+  slug: string;
+  num: number;
+  title: string;
+  section: string;
+  drill: string;
+  practice: string;
+  strength: string;
+}
+
+const drills: Drill[] = [];
+for (const t of tabs) {
+  const name = t.sheet
+    .toLowerCase()
+    .split(' ')
+    .map((w: string) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .join(' ');
+  for (const e of t.entries as any[]) {
+    const d = e.drill?.trim();
+    if (!d) continue;
+    drills.push({
+      chapter: name,
+      slug: t.slug,
+      num: e.num,
+      title: e.title,
+      section: e.section,
+      drill: d,
+      practice: e.practice ?? '',
+      strength: e.strength ?? '',
+    });
+  }
+}
+
+// shuffle deterministically at build time so "day 1" isn't entry 1 of chapter 1
+for (let i = drills.length - 1; i > 0; i--) {
+  const j = (i * 7919 + 13) % (i + 1);
+  [drills[i], drills[j]] = [drills[j], drills[i]];
+}
+---
+
+<Base title="The daily drill" description="One practice, drawn from the whole guide, every day. Two minutes beats two hours a month." noindex>
+  <div class="container">
+    <header class="head">
+      <p class="kicker">practice volume beats reading</p>
+      <h1>The daily drill</h1>
+      <p class="head__blurb measure">
+        {drills.length} drills live in this guide. You get one a day — the same one for everyone
+        on the same date — and a reroll if today's genuinely does not apply to you.
+      </p>
+    </header>
+
+    <section class="drillwrap" id="drill" data-total={drills.length} data-drills={JSON.stringify(drills)}>
+      <div class="today">
+        <p class="today__date mono" data-date></p>
+        <p class="today__chapter" data-chapter></p>
+        <h2 class="today__title" data-title></h2>
+        <div class="today__body">
+          <div class="part">
+            <h3>Today's drill</h3>
+            <p class="today__drill" data-drill></p>
+          </div>
+          <div class="part part--context" data-context hidden>
+            <h3>What this drills</h3>
+            <p data-practice class="preline"></p>
+          </div>
+        </div>
+        <div class="today__foot">
+          <a class="readlink" data-href href="#">Open the full entry →</a>
+          <button type="button" class="reroll" data-reroll>Draw a different drill</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .head {
+    padding-block: 3.5rem 1.5rem;
+  }
+  .kicker {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    margin-bottom: 0.7rem;
+  }
+  .head__blurb {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+  .today {
+    max-width: 44rem;
+    background: var(--panel);
+    border: 1px solid var(--line-strong);
+    padding: clamp(1.4rem, 4vw, 2.6rem);
+  }
+  .today__date {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1rem;
+  }
+  .today__chapter {
+    font-size: 0.76rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 0.5rem;
+  }
+  .today__title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1.4rem;
+  }
+  .part {
+    margin-bottom: 1.1rem;
+  }
+  .part h3 {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.3rem;
+  }
+  .today__drill {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: 1.18rem;
+    line-height: 1.45;
+    max-width: 56ch;
+  }
+  .part--context {
+    background: var(--paper);
+    border: 1px dashed var(--line-strong);
+    padding: 0.85rem 1rem;
+  }
+  .part--context p {
+    font-size: 0.94rem;
+    max-width: 60ch;
+  }
+  .preline {
+    white-space: pre-line;
+  }
+  .today__foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line);
+  }
+  .readlink {
+    color: var(--moss);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  .reroll {
+    font-family: var(--font-body);
+    font-size: 0.84rem;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
+  }
+  .reroll:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+</style>
+
+<script>
+  interface Drill {
+    chapter: string;
+    slug: string;
+    num: number;
+    title: string;
+    section: string;
+    drill: string;
+    practice: string;
+    strength: string;
+  }
+
+  const root = document.getElementById('drill') as HTMLElement;
+  const drills: Drill[] = JSON.parse(root.dataset.drills ?? '[]');
+  const dateEl = document.querySelector('[data-date]') as HTMLElement;
+  const chapterEl = document.querySelector('[data-chapter]') as HTMLElement;
+  const titleEl = document.querySelector('[data-title]') as HTMLElement;
+  const drillEl = document.querySelector('[data-drill]') as HTMLElement;
+  const contextEl = document.querySelector('[data-context]') as HTMLElement;
+  const practiceEl = document.querySelector('[data-practice]') as HTMLElement;
+  const hrefEl = document.querySelector('[data-href]') as HTMLAnchorElement;
+
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((now.getTime() - start.getTime()) / 86400000);
+
+  function show(d: Drill) {
+    dateEl.textContent = now.toLocaleDateString('en-IN', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+    chapterEl.textContent = d.chapter;
+    titleEl.textContent = d.title;
+    drillEl.textContent = d.drill;
+    if (d.practice && d.practice !== d.drill) {
+      contextEl.hidden = false;
+      practiceEl.textContent = d.practice;
+    } else {
+      contextEl.hidden = true;
+    }
+    hrefEl.href = `/chapters/${d.slug}#e${d.num}`;
+  }
+
+  const today = drills[dayOfYear % drills.length];
+  if (today) show(today);
+
+  document.querySelector('[data-reroll]')?.addEventListener('click', () => {
+    const pick = drills[Math.floor(Math.random() * drills.length)];
+    if (pick) show(pick);
+  });
+</script>

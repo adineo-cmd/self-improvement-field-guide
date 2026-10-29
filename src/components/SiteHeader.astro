@@ -11,21 +11,26 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
       <span class="jacket__name">The Field Guide</span>
       <span class="jacket__sub">evidence-graded · practice-first</span>
     </a>
-    <nav aria-label="Primary">
-      <ul class="jacket__nav">
-        {site.nav.map((item) => (
-          <li>
-            <a
-              href={item.href}
-              class:list={[{ active: isActive(item.href) }]}
-              aria-current={isActive(item.href) ? 'page' : undefined}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div class="jacket__right">
+      <nav aria-label="Primary">
+        <ul class="jacket__nav">
+          {site.nav.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class:list={[{ active: isActive(item.href) }]}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <button type="button" class="jacket__search" data-search-open aria-label="Search the guide (press /)">
+        search <kbd>/</kbd>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -60,6 +65,28 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     text-transform: uppercase;
     color: rgba(241, 239, 227, 0.55);
     margin-top: 0.35rem;
+  }
+  .jacket__right {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+  }
+  .jacket__search {
+    font-family: var(--font-body);
+    font-size: 0.76rem;
+    color: rgba(241, 239, 227, 0.75);
+    background: rgba(241, 239, 227, 0.08);
+    border: 1px solid rgba(241, 239, 227, 0.3);
+    padding: 0.34rem 0.62rem;
+    cursor: pointer;
+  }
+  .jacket__search:hover {
+    color: var(--paper);
+    border-color: rgba(241, 239, 227, 0.6);
+  }
+  .jacket__search kbd {
+    font-family: inherit;
+    font-size: 0.68rem;
   }
   .jacket__nav {
     display: flex;

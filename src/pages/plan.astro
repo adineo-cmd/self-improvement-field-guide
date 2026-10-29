@@ -273,3 +273,21 @@ import plan from '../data/plan.json';
     font-size: 0.94rem;
   }
 </style>
+
+<style>
+  @media print {
+    :global(.jacket),
+    :global(.foot),
+    .reroll,
+    :global(.skip-link) {
+      display: none !important;
+    }
+    .week,
+    .aux__block {
+      break-inside: avoid;
+    }
+    .tracker__days i {
+      background: #fff;
+    }
+  }
+</style>

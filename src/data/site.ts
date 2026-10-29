@@ -9,6 +9,8 @@ export const site = {
   nav: [
     { href: '/chapters', label: 'Chapters' },
     { href: '/plan', label: 'The 12-week plan' },
+    { href: '/drill', label: 'Daily drill' },
+    { href: '/quiz', label: 'Myth or fact' },
     { href: '/sources', label: 'Sources' },
     { href: '/about', label: 'How to use' },
   ],

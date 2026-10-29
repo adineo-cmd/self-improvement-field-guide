@@ -1,0 +1,343 @@
+---
+import Base from '../layouts/Base.astro';
+import tabs from '../data/tabs.json';
+
+interface Card {
+  claim: string;
+  answer: 'myth' | 'fact';
+  detail: string;
+  href: string;
+  chapter: string;
+  strength: string;
+}
+
+function firstSentence(text: string) {
+  const s = (text.split(/(?<=[.!?])\s/)[0] ?? '').trim();
+  return s.length > 200 ? s.slice(0, 197) + '…' : s;
+}
+
+const mythCards: Card[] = [];
+const factCards: Card[] = [];
+
+for (const t of tabs) {
+  const name = t.sheet
+    .toLowerCase()
+    .split(' ')
+    .map((w: string) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .join(' ');
+  for (const e of t.entries as any[]) {
+    const href = `/chapters/${t.slug}#e${e.num}`;
+    if (e.myths) {
+      // "Myth: ... It is several ..." → claim = the myth statement
+      const claim = firstSentence(e.myths.replace(/^myth:\s*/i, ''));
+      if (claim && claim.length > 24) {
+        mythCards.push({
+          claim,
+          answer: 'myth',
+          detail: e.myths,
+          href,
+          chapter: name,
+          strength: e.strength ?? '',
+        });
+      }
+    }
+    if ((e.strength === 'Strong' || e.strength === 'Moderate') && e.science) {
+      const claim = firstSentence(e.science);
+      if (claim && claim.length > 24) {
+        factCards.push({
+          claim,
+          answer: 'fact',
+          detail: `${e.science} (Evidence: ${e.strength})`,
+          href,
+          chapter: name,
+          strength: e.strength,
+        });
+      }
+    }
+  }
+}
+
+// deterministic, varied selection: interleave chapters so a round isn't all one theme
+const pick = <T,>(arr: T[], n: number) => {
+  const out: T[] = [];
+  const step = Math.max(1, Math.floor(arr.length / n));
+  for (let i = 0; out.length < n && i < arr.length; i += step) out.push(arr[i]);
+  return out;
+};
+
+const cards = [...pick(mythCards, 25), ...pick(factCards, 25)];
+---
+
+<Base title="Myth or fact?" description="Ten claims from the guide, one at a time. Separate what the studies support from what just sounds right." noindex>
+  <div class="container">
+    <header class="head">
+      <p class="kicker">from the guide's evidence grades</p>
+      <h1>Myth or fact?</h1>
+      <p class="head__blurb measure">
+        {mythCards.length} myths and {factCards.length} supported findings live in these pages. Ten
+        claims at a time: read it, call it, flip it.
+      </p>
+    </header>
+
+    <section class="quiz" id="quiz" data-cards={JSON.stringify(cards)}>
+      <div class="score mono" data-score>card 1 / 10 · 0 correct</div>
+
+      <article class="card" data-card-face>
+        <p class="card__chapter" data-card-chapter></p>
+        <blockquote class="card__claim" data-card-claim></blockquote>
+        <div class="card__actions">
+          <button type="button" class="btn btn--myth" data-guess="myth">Myth</button>
+          <button type="button" class="btn btn--fact" data-guess="fact">Fact</button>
+        </div>
+        <div class="verdict" data-verdict hidden>
+          <p class="verdict__line" data-verdict-label></p>
+          <p class="verdict__detail" data-verdict-detail></p>
+          <p class="verdict__link"><a data-verdict-href href="#">Read the full entry →</a></p>
+          <button type="button" class="btn btn--next" data-next>Next claim</button>
+        </div>
+      </article>
+
+      <div class="done" data-done hidden>
+        <h2>Round over.</h2>
+        <p class="done__score" data-done-score></p>
+        <p class="done__note">
+          Every answer links back to the entry it came from — that is where the reading pays off.
+        </p>
+        <button type="button" class="btn btn--next" data-again>Play another round</button>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .head {
+    padding-block: 3.5rem 1.5rem;
+  }
+  .kicker {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    margin-bottom: 0.7rem;
+  }
+  .head__blurb {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+  .quiz {
+    max-width: 46rem;
+  }
+  .score {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1rem;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line-strong);
+    padding: clamp(1.4rem, 3.5vw, 2.4rem);
+  }
+  .card__chapter {
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 1.1rem;
+  }
+  .card__claim {
+    margin: 0 0 1.6rem;
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: clamp(1.35rem, 2.8vw, 1.8rem);
+    line-height: 1.3;
+  }
+  .card__actions {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .btn {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 0.6rem 1.6rem;
+    cursor: pointer;
+    border: 1.5px solid;
+    background: transparent;
+  }
+  .btn--myth {
+    color: var(--myth);
+    border-color: var(--myth);
+  }
+  .btn--fact {
+    color: var(--strong);
+    border-color: var(--strong);
+  }
+  .btn--myth:hover,
+  .btn--fact:hover {
+    background: var(--paper);
+  }
+  .btn--next {
+    color: var(--jacket);
+    border-color: var(--jacket);
+    background: var(--paper);
+  }
+  .btn--next:hover {
+    background: var(--panel);
+  }
+  .verdict {
+    margin-top: 1.4rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1.1rem;
+  }
+  .verdict__line {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 700;
+    font-size: 1.02rem;
+  }
+  :global(.verdict__line .correct) {
+    color: var(--strong);
+  }
+  :global(.verdict__line .wrong) {
+    color: var(--myth);
+  }
+  .verdict__detail {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+  .verdict__link {
+    margin-top: 0.7rem;
+    font-size: 0.88rem;
+  }
+  .verdict__link a {
+    color: var(--moss);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .verdict .btn--next {
+    margin-top: 1.2rem;
+  }
+  .done {
+    background: var(--jacket);
+    color: var(--paper);
+    padding: clamp(1.6rem, 4vw, 2.6rem);
+  }
+  .done h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.6rem;
+  }
+  .done__score {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: #9ec48f;
+  }
+  .done__note {
+    margin-top: 0.7rem;
+    color: rgba(241, 239, 227, 0.7);
+    font-size: 0.95rem;
+    max-width: 52ch;
+  }
+  .done .btn--next {
+    margin-top: 1.4rem;
+    background: var(--paper);
+  }
+</style>
+
+<script>
+  interface Card {
+    claim: string;
+    answer: 'myth' | 'fact';
+    detail: string;
+    href: string;
+    chapter: string;
+    strength: string;
+  }
+
+  const quizEl = document.getElementById('quiz') as HTMLElement;
+  const allCards: Card[] = JSON.parse(quizEl.dataset.cards ?? '[]');
+
+  const scoreEl = document.querySelector('[data-score]') as HTMLElement;
+  const faceEl = document.querySelector('[data-card-face]') as HTMLElement;
+  const chapterEl = document.querySelector('[data-card-chapter]') as HTMLElement;
+  const claimEl = document.querySelector('[data-card-claim]') as HTMLElement;
+  const verdictEl = document.querySelector('[data-verdict]') as HTMLElement;
+  const verdictLabel = document.querySelector('[data-verdict-label]') as HTMLElement;
+  const verdictDetail = document.querySelector('[data-verdict-detail]') as HTMLElement;
+  const verdictHref = document.querySelector('[data-verdict-href]') as HTMLAnchorElement;
+  const doneEl = document.querySelector('[data-done]') as HTMLElement;
+  const doneScore = document.querySelector('[data-done-score]') as HTMLElement;
+
+  const ROUND = 10;
+  let deck: Card[] = [];
+  let idx = 0;
+  let correct = 0;
+
+  function shuffle<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function newRound() {
+    deck = shuffle(allCards).slice(0, ROUND);
+    idx = 0;
+    correct = 0;
+    doneEl.hidden = true;
+    faceEl.hidden = false;
+    showCard();
+  }
+
+  function showCard() {
+    const card = deck[idx];
+    scoreEl.textContent = `card ${idx + 1} / ${deck.length} · ${correct} correct`;
+    chapterEl.textContent = card.chapter;
+    claimEl.textContent = `“${card.claim}”`;
+    verdictEl.hidden = true;
+  }
+
+  function guess(answer: 'myth' | 'fact') {
+    const card = deck[idx];
+    const right = answer === card.answer;
+    if (right) correct++;
+    scoreEl.textContent = `card ${idx + 1} / ${deck.length} · ${correct} correct`;
+    verdictLabel.textContent = right
+      ? `Correct — it is a ${card.answer}.`
+      : `It is a ${card.answer}.`;
+    verdictLabel.className = right ? 'correct' : 'wrong';
+    verdictDetail.textContent = card.detail;
+    verdictHref.href = card.href;
+    verdictEl.hidden = false;
+  }
+
+  function next() {
+    idx++;
+    if (idx >= deck.length) {
+      faceEl.hidden = true;
+      doneEl.hidden = false;
+      doneScore.textContent = `${correct} of ${deck.length} called correctly.`;
+    } else {
+      showCard();
+    }
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('[data-guess]').forEach((b) =>
+    b.addEventListener('click', () => guess(b.dataset.guess as 'myth' | 'fact'))
+  );
+  document.querySelector('[data-next]')?.addEventListener('click', next);
+  document.querySelector('[data-again]')?.addEventListener('click', newRound);
+
+  if (allCards.length >= ROUND) newRound();
+</script>

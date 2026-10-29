@@ -35,6 +35,19 @@ for (const e of tab.entries) {
     g.entries.push(e);
   }
 }
+
+// neighbours within a section, for the "related" row under each entry
+function neighbours(section: any[], num: number) {
+  const i = section.findIndex((x) => x.num === num);
+  return { prev: i > 0 ? section[i - 1] : undefined, next: i < section.length - 1 ? section[i + 1] : undefined };
+}
+
+// "start here": the best-evidence entries to read first
+const rank: Record<string, number> = { Strong: 0, Moderate: 1, Mixed: 2, Emerging: 3 };
+const startHere = [...tab.entries]
+  .filter((e) => e.strength && rank[e.strength] !== undefined)
+  .sort((a, b) => (rank[a.strength] ?? 9) - (rank[b.strength] ?? 9))
+  .slice(0, 3);
 ---
 
 <Base title={name} description={tab.description}>
@@ -64,13 +77,41 @@ for (const e of tab.entries) {
       </div>
     </header>
 
+    {startHere.length > 0 && (
+      <aside class="starthere" aria-labelledby="starthere-h">
+        <p class="starthere__label" id="starthere-h">Start here — the best-evidence entries in this chapter</p>
+        <ol class="starthere__list">
+          {startHere.map((e: any) => (
+            <li>
+              <a href={`#e${e.num}`}>
+                <span class="starthere__num">{String(e.num).padStart(3, '0')}</span>
+                <span class="starthere__title">{e.title}</span>
+                <span class="starthere__strength">{e.strength}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </aside>
+    )}
+
     {groups.map((g) => (
       <section class="group" id={anchor(g.title, g.entries[0].num)}>
         {g.title && <h2 class="group__title">{g.title}</h2>}
         <div class="group__entries">
-          {g.entries.map((e: any) => (
-            <Entry entry={e} kind={tab.kind} />
-          ))}
+          {g.entries.map((e: any) => {
+            const rel = neighbours(g.entries, e.num);
+            return (
+              <div class="entrywrap">
+                <Entry entry={e} kind={tab.kind} />
+                {(rel.prev || rel.next) && (
+                  <p class="entrywrap__related">
+                    {rel.prev && <a href={`#e${rel.prev.num}`} rel="prev">← {rel.prev.title}</a>}
+                    {rel.next && <a href={`#e${rel.next.num}`} rel="next">{rel.next.title} →</a>}
+                  </p>
+                )}
+              </div>
+            );
+          })}
         </div>
         <p class="group__empty" hidden data-empty-note>
           No {tab.kind === 'scenario' ? 'playbooks' : 'entries'} in this section carry that label.
@@ -208,6 +249,77 @@ for (const e of tab.entries) {
   .group {
     margin-top: 2.6rem;
     scroll-margin-top: 4rem;
+  }
+  .starthere {
+    margin-top: 1.8rem;
+    background: var(--jacket);
+    color: var(--paper);
+    padding: 1.2rem 1.4rem 1.3rem;
+  }
+  .starthere__label {
+    font-size: 0.7rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: rgba(241, 239, 227, 0.6);
+    margin-bottom: 0.8rem;
+  }
+  .starthere__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.45rem;
+  }
+  .starthere__list a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--paper);
+  }
+  .starthere__list a:hover .starthere__title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .starthere__num {
+    font-size: 0.72rem;
+    color: #9ec48f;
+    min-width: 2.2rem;
+  }
+  .starthere__title {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: 1.1rem;
+  }
+  .starthere__strength {
+    margin-left: auto;
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: rgba(241, 239, 227, 0.55);
+    white-space: nowrap;
+  }
+  .entrywrap__related {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: -0.4rem 0 0.9rem;
+    padding-inline: 0.2rem;
+    font-size: 0.8rem;
+  }
+  .entrywrap__related a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    max-width: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .entrywrap__related a:hover {
+    color: var(--moss);
+  }
+  .entrywrap__related a:last-child {
+    text-align: right;
   }
   .group__title {
     font-size: 1.6rem;

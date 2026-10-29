@@ -1,0 +1,22 @@
+:root {
+  --jacket: #1c2b22;
+  --jacket-soft: #243528;
+  --paper: #f1efe3;
+  --panel: #faf9f0;
+  --ink: #232e26;
+  --ink-soft: #5d675c;
+  --moss: #3e6b3f;
+  --moss-deep: #2c4f2e;
+  --strong: #2e6b46;
+  --moderate: #77681c;
+  --mixed: #7d5220;
+  --emerging: #4f5d72;
+  --myth: #8a3226;
+  --line: rgba(35, 46, 38, 0.16);
+  --line-strong: rgba(35, 46, 38, 0.45);
+  --focus: #3e6b3f;
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-body: 'DM Sans Variable', system-ui, sans-serif;
+  --container: 1240px;
+  --measure: 68ch;
+}

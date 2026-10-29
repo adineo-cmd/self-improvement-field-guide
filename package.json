@@ -1,0 +1,23 @@
+{
+  "name": "self-improvement-field-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "data": "python3 scripts/build_data.py"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "astro": "^6.4.8",
+    "@fontsource-variable/fraunces": "^5.3.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^5.9.3"
+  }
+}

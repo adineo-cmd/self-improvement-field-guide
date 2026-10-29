@@ -1,0 +1,110 @@
+{
+ "intro": [
+  "How to use this workbook: what is inside, what the evidence labels mean, and the safety rules.",
+  "Start at the top. The CONTENTS list links to every tab; run one drill at a time."
+ ],
+ "blocks": [
+  {
+   "title": "What This Is",
+   "text": "One workbook that collects evidence-based self-improvement knowledge in sixteen tabs. Each row shows what the science says, how strong the evidence is, and one practice you can try. The goal is honest guidance, not hype."
+  },
+  {
+   "title": "How to Use It",
+   "text": "Read this page first. Pick the tab where you are weakest and start there, or work through the tabs in order. Run one 1-week drill at a time from that tab. When you want a full plan, use ACTION_PLAN and follow the 12-week program."
+  },
+  {
+   "title": "Scenario Tabs",
+   "text": "Six tabs answer the question 'what do I actually say?' Each row shows the common mistake, what to do instead, exact words, why it works, and a one-week drill. Start with the situation you avoid most, not the one that looks most impressive."
+  },
+  {
+   "title": "Find Your Weak Spot",
+   "text": "I freeze when I have to speak up -> SCENARIOS\nI run out of things to say -> SCENARIOS and DATING\nI cannot tell if someone is interested -> DATING\nPeople ask me to repeat myself -> VOICE & SPEECH\nMy voice sounds thin or rushed -> VOICE & SPEECH\nI slouch and hide in photos -> PRESENCE & STYLE\nI do not know what colours suit me -> PRESENCE & STYLE\nI say yes and then resent it -> SELF & RESILIENCE\nI spiral when criticised -> SELF & RESILIENCE\nI misread the room -> SOCIAL AWARENESS\nI do not know how to keep friends -> SOCIAL AWARENESS\nI avoid hard conversations -> SCENARIOS and SELF & RESILIENCE"
+  },
+  {
+   "title": "How to Run a Scenario",
+   "text": "Pick one situation. Read the mistake and the steps. Say the lines out loud three times. Run the one-week drill. Then try it once for real at the easiest level. Review what happened without insulting yourself."
+  },
+  {
+   "title": "Evidence Legend",
+   "text": "The label on each row tells you how much to trust it. Strong: many good studies agree. Moderate: several decent studies support it. Emerging: early or small studies hint at it. Mixed: studies disagree or the effect is small. Myth: good studies show it does not work."
+  },
+  {
+   "title": "The Rules",
+   "text": "This knowledge is for building yourself and for defending against manipulation. There is no harm-playbook here; every dark tactic is shown with a counter you can use. Use what you learn to protect people, never to use them."
+  },
+  {
+   "title": "Safety & Limits",
+   "text": "Nothing here is medical advice. If you feel depressed or anxious for weeks, see a doctor or a qualified professional. If a topic mentions drugs or treatments, see a doctor too. This workbook is a starting point, not a replacement for real care."
+  },
+  {
+   "title": "How to Get Results",
+   "text": "Practice volume beats reading every time; two minutes daily beats two hours once. Small steps repeated are what change you. Track what you do in ACTION_PLAN so you can see your own progress."
+  }
+ ],
+ "contents": [
+  {
+   "tab": "README",
+   "purpose": "This page. What the workbook is, how to use it, and what the labels mean."
+  },
+  {
+   "tab": "MIND",
+   "purpose": "Emotional intelligence, habits, and the psychology of self-change."
+  },
+  {
+   "tab": "PEOPLE",
+   "purpose": "Friendship, conversation, charisma, and dating science."
+  },
+  {
+   "tab": "POWER",
+   "purpose": "Influence, negotiation, networking, and leadership."
+  },
+  {
+   "tab": "SHADOW",
+   "purpose": "Human nature, manipulation defense, and hard situations."
+  },
+  {
+   "tab": "BODY & SIGNALS",
+   "purpose": "Body language truth, looks, strength, and sleep."
+  },
+  {
+   "tab": "BRAIN",
+   "purpose": "Intelligence, memory, learning, and thinking tools."
+  },
+  {
+   "tab": "CULTURE",
+   "purpose": "History and art conversation capital."
+  },
+  {
+   "tab": "SCENARIOS",
+   "purpose": "Everyday social playbooks: first impressions, small talk, groups, work, conflict, apologies, hosting."
+  },
+  {
+   "tab": "DATING",
+   "purpose": "Attraction, warm and cold approaches, texting, first dates, flirting, consent, and rejection."
+  },
+  {
+   "tab": "VOICE & SPEECH",
+   "purpose": "Clear speech, articulation, safe deeper voice, tone, storytelling, and public speaking."
+  },
+  {
+   "tab": "PRESENCE & STYLE",
+   "purpose": "Confidence, charisma, gestures, grooming, colour, outfits, photos, and details."
+  },
+  {
+   "tab": "SELF & RESILIENCE",
+   "purpose": "Self-compassion, handling blame, boundaries, conflict repair, anxiety, and values."
+  },
+  {
+   "tab": "SOCIAL AWARENESS",
+   "purpose": "Reading the room, norms, workplace politics, friendship, humour, and family context."
+  },
+  {
+   "tab": "ACTION_PLAN",
+   "purpose": "12-week program plus trackers."
+  },
+  {
+   "tab": "SOURCES",
+   "purpose": "Studies, books, and free resources."
+  }
+ ]
+}

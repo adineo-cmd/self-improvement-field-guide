@@ -1,0 +1,86 @@
+---
+import { site } from '../data/site';
+
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+
+<header class="jacket">
+  <div class="container jacket__inner">
+    <a href="/" class="jacket__mark">
+      <span class="jacket__name">The Field Guide</span>
+      <span class="jacket__sub">evidence-graded · practice-first</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="jacket__nav">
+        {site.nav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class:list={[{ active: isActive(item.href) }]}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .jacket {
+    background: var(--jacket);
+    color: var(--paper);
+  }
+  .jacket__inner {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-block: 1.3rem 1.1rem;
+  }
+  .jacket__mark {
+    text-decoration: none;
+    color: var(--paper);
+  }
+  .jacket__name {
+    display: block;
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+  .jacket__sub {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(241, 239, 227, 0.55);
+    margin-top: 0.35rem;
+  }
+  .jacket__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.92rem;
+  }
+  .jacket__nav a {
+    color: rgba(241, 239, 227, 0.75);
+    text-decoration: none;
+    padding-block: 0.2rem;
+    border-bottom: 2px solid transparent;
+  }
+  .jacket__nav a:hover {
+    color: var(--paper);
+  }
+  .jacket__nav a.active {
+    color: var(--paper);
+    border-bottom-color: #9ec48f;
+  }
+</style>

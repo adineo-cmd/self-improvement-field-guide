@@ -1,0 +1,2790 @@
+{
+ "studies": [
+  {
+   "name": "A-Tjak et al. 2015",
+   "finding": "Meta-analysis of 39 RCTs; acceptance and commitment therapy beat control conditions for anxiety and depression",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Balban et al. 2023",
+   "finding": "Randomized one-month study; daily cyclic sighing beat mindfulness meditation on several mood measures",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Bandura 1997",
+   "finding": "Self-efficacy theory; mastery experiences are the strongest builder of belief in your own ability",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Borkovec et al. 1983",
+   "finding": "'stimulus control' of worry reduced it; a 2023 review found worry postponement helps modestly (small-to-moderate effect)",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Bryan et al. 2011",
+   "finding": "Voters nudged with noun identity ('be a voter') voted about 11 percentage points more than those told to 'vote'",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Cannon 1915",
+   "finding": "Described the fight-or-flight response; modern work confirms adrenaline arousal is normal and survivable",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Clance & Imes 1978",
+   "finding": "First described the pattern in high-achieving women; later surveys find it across genders and roles",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Cochran & Tesser 1996",
+   "finding": "Dieters who broke a rule overate afterwards, showing the all-or-nothing quit pattern",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Cohen et al. 2006",
+   "finding": "Values-writing reduced the achievement gap for minority students over a school year; later replications are mixed",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Dai et al. 2014",
+   "finding": "Gym visits rose about 33 percent with a new week, 14 percent with a new month, 11 percent with a new year, and 47 percent at a new semester",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Deci & Ryan 2000",
+   "finding": "Self-determination theory: goals tied to autonomy, competence, and relatedness last longer.",
+   "usedIn": "MIND, BRAIN"
+  },
+  {
+   "name": "Deci, Koestner & Ryan 1999",
+   "finding": "Meta-analysis of 128 experiments; expected tangible rewards undermined intrinsic motivation for interesting tasks",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Duckworth, Gendler & Gross 2016",
+   "finding": "Review showing situational strategies are the most effective form of self-control",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Dweck 2006",
+   "finding": "Described common mindset triggers such as evaluation, competition, and setbacks.",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Emmons & McCullough 2003",
+   "finding": "Participants listing things they were grateful for weekly felt better and exercised more than comparison groups",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Frattaroli 2006",
+   "finding": "Writing about feelings has small average effects (r = 0.075); structure adds planning value",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Gollwitzer & Sheeran 2006",
+   "finding": "Meta-analysis of 94 tests: if-then plans improved goal attainment with d = 0.65.",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Goyal et al. 2014",
+   "finding": "47 trials; anxiety effect 0.38 at 8 weeks (0.22 later), depression 0.30 (0.23), pain 0.33; no better than active treatments",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Gross & John 2003",
+   "finding": "Habitual suppressors felt worse, shared less, and were liked less; reappraisers did better.",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Gunderson et al. 2013",
+   "finding": "Parents' process praise at ages 1-3 predicted growth mindsets at ages 7-8 (r = 0.35)",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Harkin et al. 2016",
+   "finding": "Meta-analysis of 138 studies; prompting progress monitoring improved goal attainment (small-to-moderate effect)",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Hodzic et al. 2018",
+   "finding": "Meta-analysis of 46 studies; EI training produced small to moderate gains, mostly in the sub-skill taught",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Hofmann & Smits 2008",
+   "finding": "Meta-analysis of 12 trials: CBT cut anxiety with g = 0.73.",
+   "usedIn": "MIND, PEOPLE"
+  },
+  {
+   "name": "Kappes & Oettingen 2011",
+   "finding": "Participants who fantasized about success had lower energy and effort than those who contrasted with obstacles",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Kross et al. 2014",
+   "finding": "Seven studies, over 500 people; distanced self-talk improved regulation under social stress",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Lally et al. 2010",
+   "finding": "Median 66 days to automaticity, with a range of 18 to 254 days; missing one day did not derail progress.",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Lieberman et al. 2007",
+   "finding": "Labeling emotional images reduced amygdala activity and increased right prefrontal activity",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Locke & Latham 2002",
+   "finding": "Review of decades of studies; specific hard goals consistently outperform vague goals",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Mayer & Salovey 1997",
+   "finding": "Proposed the four-branch ability model that most research still uses",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Milkman, Minson & Volpp 2014",
+   "finding": "Gym visits rose about 51 percent at first; gains decayed over weeks as the temptation lost its pull",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Mueller & Dweck 1998",
+   "finding": "Effort-praised children persisted on solvable tasks, but effort without strategy has limits; reviews stress strategy over raw sweat",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Neff & Vonk 2009",
+   "finding": "Self-compassion linked to more stable self-worth, less social comparison, and less narcissism than self-esteem",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Nolen-Hoeksema 2008",
+   "finding": "Review showing rumination links to longer and more severe depression",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "O'Boyle et al. 2011",
+   "finding": "Meta-analysis of 65 studies; EI correlated about r = 0.28 with job performance",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Parker et al. 2018",
+   "finding": "Meta-analysis: exposure therapy worked well for anxiety disorders.",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Petrides & Furnham 2001",
+   "finding": "Split EI into trait EI (self-report) and ability EI (performance test); the two correlate weakly",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Singer & Klimecki 2014",
+   "finding": "Review separating empathy from compassion; compassion training increased helping behavior and positive emotion",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Sisk et al. 2018",
+   "finding": "Two meta-analyses found growth-mindset beliefs and interventions had weak average effects.",
+   "usedIn": "MIND, BRAIN"
+  },
+  {
+   "name": "Wood & Neal 2007",
+   "finding": "Review showing habits are automatic responses driven by context, not by intentions",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Wood, Tam & Witt 2005",
+   "finding": "Students' habits changed after moving to a new university and returned when they visited old contexts",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Yeager et al. 2019",
+   "finding": "National mindset study; a short 'failure is information' style intervention helped lower-achieving students modestly, with no average effect overall",
+   "usedIn": "MIND"
+  },
+  {
+   "name": "Algoe, Gable & Maisel 2010",
+   "finding": "Expressed gratitude predicted greater connection in couples over time",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Antonakis, Fenley & Liechti 2016",
+   "finding": "Leaders trained in charisma tactics were rated more charismatic by independent observers",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Aron et al. 1997",
+   "finding": "Strangers who asked each other 36 increasingly personal questions felt closer than pairs doing small talk",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Aron et al. 2000",
+   "finding": "Couples who did novel, exciting activities together reported higher relationship quality than couples doing routine things",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Banse & Scherer 1996",
+   "finding": "Listeners reliably judged emotions from voice cues like pitch and tempo, even without seeing the speaker",
+   "usedIn": "PEOPLE, BODY"
+  },
+  {
+   "name": "Cacioppo & Hawkley 2009",
+   "finding": "Lonely people showed more negative expectations about social contact, feeding a loop that keeps loneliness going",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Chartrand & Bargh 1999",
+   "finding": "Participants liked a partner more when the partner subtly mimicked their posture and movements",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Clark & Wells 1995",
+   "finding": "Their model ties social anxiety to self-focused attention and imagined flaws; therapies that shift attention outward reduce symptoms",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Collins & Miller 1994",
+   "finding": "Meta-analysis found disclosure and liking go together; people liked those who opened up, and opened up to those they liked",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Cuijpers et al. 2016",
+   "finding": "Meta-analysis found cognitive-behavioral therapy has large, reliable effects on social anxiety and other anxiety disorders",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Drigotas et al. 1999",
+   "finding": "People moved closer to their ideal self when a partner supported that side of them, and these couples were more satisfied",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Dunbar et al. 2012",
+   "finding": "Shared laughter in groups raised pain thresholds, a sign of endorphin release and social bonding",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Eastwick & Finkel 2008",
+   "finding": "Stated wants like earning prospects and looks predicted little of real speed-date desire; reported types and actual attraction were different maps",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Eastwick et al. 2014",
+   "finding": "Meta-analysis found ideal-partner checklists barely predict real attraction and relationship success; lived experience is the better guide",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Eastwick, Finkel, Mochon & Ariely 2007",
+   "finding": "In speed dates, unique desire for one person was often reciprocated, but people who liked everyone indiscriminately were not liked back more",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Eisenberger, Lieberman & Williams 2003",
+   "finding": "Social exclusion activated brain regions linked to physical pain",
+   "usedIn": "PEOPLE, SHADOW"
+  },
+  {
+   "name": "Epley & Schroeder 2014",
+   "finding": "Commuters expected talking to strangers would be unpleasant, but they enjoyed it more than sitting alone, and so did the strangers",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Fiske, Cuddy & Glick 2007",
+   "finding": "Research reviews show warmth and competence are the two universal dimensions of social judgment",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Gilovich, Medvec & Savitsky 2000",
+   "finding": "Students estimated about 46 percent would notice their embarrassing shirt; only about 23 percent did, roughly a twofold overestimate",
+   "usedIn": "MIND, PEOPLE"
+  },
+  {
+   "name": "Gottman & DeClaire 2001",
+   "finding": "Popularized bids for connection: small attempts to connect predict relationship health.",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Gottman & Levenson 1992",
+   "finding": "How couples handled negativity during conflict predicted which marriages lasted; the popular 5-to-1 positive-to-negative ratio traces to this lab work, but independent replication is limited, so treat the exact ratio as Mixed",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Green & Brock 2000",
+   "finding": "Readers who were more absorbed in a story, a state called transportation, shifted their beliefs more toward it, even when told it was fiction",
+   "usedIn": "PEOPLE, POWER"
+  },
+  {
+   "name": "Hall 2019",
+   "finding": "Hours together predicted closeness, and Hall's own advice was simple: you cannot make people spend time with you, but you can invite them",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Hazan & Shaver 1987",
+   "finding": "Adult romantic bonds follow attachment patterns first described in infants; later research shows these are dimensions, not fixed boxes",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Henderlong & Lepper 2002",
+   "finding": "The praise research review found sincere, specific praise that supports choice works best; generic or controlling praise backfires",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Huang et al. 2017",
+   "finding": "Responsiveness, meaning listening, understanding, and caring, drove liking in conversations; timing rules like wait three days have no strong supporting study",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Jonason et al. 2009",
+   "finding": "Dark personality traits like narcissism and psychopathy predicted using short-term manipulation tactics in dating; love bombing itself is a popular label, not a clinical diagnosis",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Jozkowski et al. 2014",
+   "finding": "College students read consent cues differently, which is why clear words beat guessing or assuming",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Keltner et al. 2001",
+   "finding": "Playful teasing that both sides enjoy strengthens bonds, while aggressive or hurtful teasing harms relationships",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Kleinke, Meeker & Staneski 1986",
+   "finding": "People rated cute-and-flirty lines least desirable and direct or harmless lines most desirable",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Lewicki, Polin & Lount 2016",
+   "finding": "Apologies with more components, especially accepting responsibility and offering repair, were judged more effective; integrity violations were harder to repair than ability failures",
+   "usedIn": "PEOPLE, POWER"
+  },
+  {
+   "name": "Mastroianni et al. 2021",
+   "finding": "People often wanted conversations to end before they did, and both partners underestimated the other's wish to stop",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "McGraw & Warren 2010",
+   "finding": "People found immoral-but-harmless situations funnier, supporting the benign violation theory of humor",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Moreland & Beach 1992",
+   "finding": "College students liked women who had sat in on their class more often, even though the women never spoke to anyone",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Przybylski & Weinstein 2013",
+   "finding": "The mere presence of a phone on the table lowered reported closeness and trust in conversation",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Reis, Clark & Holmes 2004",
+   "finding": "Perceived partner responsiveness organizes closeness and intimacy",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Sandstrom & Dunn 2014",
+   "finding": "On days with more acquaintance contact, people felt happier and more like they belonged",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Stivers et al. 2009",
+   "finding": "Across ten languages, speakers kept gaps between turns short, about a fifth of a second, showing tight timing is a human norm",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Tidwell, Eastwick & Finkel 2013",
+   "finding": "In speed dates, the feeling of similarity predicted attraction, but actual measured similarity did not",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Walster et al. 1966",
+   "finding": "At a college computer dance, physical attractiveness predicted liking and follow-up dates more than any personality measure",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Weger et al. 2014",
+   "finding": "Active listening, especially paraphrasing, made people feel more understood than advice or simple acknowledgements.",
+   "usedIn": "PEOPLE, BODY"
+  },
+  {
+   "name": "Whitchurch, Wilson & Gilbert 2011",
+   "finding": "Uncertain likelihood of being liked raised attraction in college women, but the study tested uncertainty, not insults; the technique itself comes from the seduction industry and lacks scientific support",
+   "usedIn": "PEOPLE, SHADOW"
+  },
+  {
+   "name": "Yeomans et al. 2019",
+   "finding": "Follow-up questions had cumulative benefits for liking across conversations, deepening the effect found in Huang et al. 2017",
+   "usedIn": "PEOPLE"
+  },
+  {
+   "name": "Amabile & Kramer 2011",
+   "finding": "Across nearly 12,000 daily diary entries, small daily progress was the strongest driver of positive work mood and motivation, feeding the record people build",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Anderson et al. 2012",
+   "finding": "Status measured inside a person's own group, not global standing, tracked well-being, showing that rank lives in local rooms, not in one overall score",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Axelrod 1984",
+   "finding": "In repeated computer tournaments of the prisoner's dilemma, TIT FOR TAT, which cooperates first and then copies the other side's last move, consistently beat more complex and more ruthless strategies",
+   "usedIn": "POWER, SHADOW, BRAIN"
+  },
+  {
+   "name": "Borgida & Nisbett 1977",
+   "finding": "Students chose a course more often after hearing one vivid, concrete account than after seeing the summary of many surveys",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Brehm 1966",
+   "finding": "People push back when they feel their freedom is being taken, a reaction called reactance, so heavy-handed pressure can produce the opposite of the intended result",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Burger et al. 2004",
+   "finding": "People agreed to a request more often when the asker was said to share something small in common, like a first name or a birthday",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Burt 2004",
+   "finding": "Managers whose networks spanned separate groups, so-called structural holes, produced and were judged to have more valuable new ideas than those who stayed in one cluster",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Cheng, Tracy & Henrich 2010",
+   "finding": "Prestige went with advice-giving and prosocial traits, dominance with aggression and narcissism",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Cheng, Tracy, Foulsham, Kingstone & Henrich 2012",
+   "finding": "In fresh groups, observers could already identify influential members quickly, and eye-tracking showed people's gaze going to both dominant and prestigious members",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Cialdini 2016",
+   "finding": "Unity was added as the seventh influence principle, distinct from liking.",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Cialdini 2021",
+   "finding": "Reciprocity is a core influence principle; a small favor creates a pull to return it.",
+   "usedIn": "POWER, SHADOW"
+  },
+  {
+   "name": "Edmondson 1999",
+   "finding": "Hospital teams that felt psychologically safe reported more errors and performed better, because errors were discussed and fixed instead of hidden",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Flynn & Bohns 2008",
+   "finding": "Across field and lab settings, people underestimated by up to 50 percent the chance others would agree to their direct requests for help",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Freedman & Fraser 1966",
+   "finding": "Homeowners who accepted a small safe-driving request were much more likely to accept a large lawn sign later",
+   "usedIn": "POWER, SHADOW"
+  },
+  {
+   "name": "Galinsky & Mussweiler 2001",
+   "finding": "In three experiments, whichever side made the first offer reached a better outcome, and first offers strongly predicted the final settlement price",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Goldstein, Cialdini & Griskevicius 2008",
+   "finding": "Hotel guests who read that most guests reuse towels reused their towels more than guests who read a standard green message",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Gollwitzer 1999",
+   "finding": "If-then plans that name the when and where of an action improved goal attainment across studies.",
+   "usedIn": "POWER, BRAIN"
+  },
+  {
+   "name": "Google Project Aristotle 2015",
+   "finding": "Google's 180-team study found psychological safety was the top factor in team effectiveness.",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Granovetter 1973",
+   "finding": "Contacts gave 56 percent of the jobs he studied; of those who found jobs through contacts, most used people they saw occasionally (55.6 percent) or rarely (27.8 percent), with only 16.7 percent using someone they saw often",
+   "usedIn": "POWER, BRAIN"
+  },
+  {
+   "name": "Grant 2013",
+   "finding": "Givers appeared at both the bottom and the top of success in several fields.",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Grant, Gino & Hofmann 2011",
+   "finding": "Introverted leaders got better results than extraverted ones when their teams were proactive, because they listened to ideas instead of taking over",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Hackman & Oldham 1976",
+   "finding": "Jobs with autonomy and whole tasks raised internal motivation and performance; delegation is how leaders create those conditions day to day",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Henrich & Gil-White 2001",
+   "finding": "Humans evolved to copy and defer to the most skilled and knowledgeable group members",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Keltner 2016",
+   "finding": "Influence is repeatedly given to the socially attuned and generous.",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Kluger & DeNisi 1996",
+   "finding": "Across 131 studies with 607 effect sizes, about a third of feedback interventions made performance worse, mostly by threatening self-image instead of describing behavior",
+   "usedIn": "POWER, BRAIN"
+  },
+  {
+   "name": "Leary et al. 1995",
+   "finding": "Self-esteem tracked how accepted people felt, acting like a social gauge rather than a verdict",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Levin, Walter & Murnighan 2011",
+   "finding": "Executives who reconnected dormant ties for work advice got useful, fresh knowledge efficiently, and old strong ties kept their trust even after years apart",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Mayer, Davis & Schoorman 1995",
+   "finding": "Their widely used trust model shows that perceived ability, benevolence, and integrity predict how much people will trust and rely on a colleague",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Milgram 1963",
+   "finding": "Ordinary people followed a lab-coat experimenter's orders to give what they believed were painful shocks, showing how far authority cues can push compliance",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Rajkumar et al. 2022",
+   "finding": "In LinkedIn's randomized experiments, new moderately weak connections increased job mobility, showing that light platform ties do real work",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Regan 1971",
+   "finding": "Participants who received a small unexpected Coke bought more raffle tickets from the person than those who received nothing, even when they did not like the server",
+   "usedIn": "POWER, SHADOW"
+  },
+  {
+   "name": "Rogelberg 2019",
+   "finding": "His surveys and studies of meetings show that meeting load and poor meetings relate to lower engagement, and that simple structure fixes most complaints",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Ross & Sicoly 1979",
+   "finding": "People claim more credit for joint work than partners give them, an egocentric bias.",
+   "usedIn": "POWER, SHADOW"
+  },
+  {
+   "name": "Schultz et al. 2007",
+   "finding": "Households using less energy than their neighbors increased use after a plain you-use-less note; adding a smiley of approval stopped the backslide",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Tajfel 1970",
+   "finding": "Even made-up groups made members favor their own side",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Thompson & Hastie 1990",
+   "finding": "Negotiators in lab studies wrongly assumed interests were opposite even when trades were possible, and settled for worse outcomes than they could have reached",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Tversky & Kahneman 1981",
+   "finding": "In the Asian disease problem, people chose riskier options when the same facts were framed as losses, showing that frames change decisions",
+   "usedIn": "POWER, BRAIN"
+  },
+  {
+   "name": "Voss 2016",
+   "finding": "Calibrated questions moved hard negotiations, per a practitioner account.",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "White & Neale 1991",
+   "finding": "A BATNA, a reservation price, and a resistance point are three distinct limits, and negotiators often misjudge their own, as in their example of a buyer who budgets 200 dollars and leaves having spent 250",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Wood & Quinn 2003",
+   "finding": "Across 17 studies, people who were warned about a persuasion attempt resisted it more, with a moderate average effect",
+   "usedIn": "POWER"
+  },
+  {
+   "name": "Worchel, Lee & Adewole 1975",
+   "finding": "Cookies in short supply were rated more valuable than identical cookies in plentiful supply, and most valuable when supplies had just dropped",
+   "usedIn": "POWER, SHADOW"
+  },
+  {
+   "name": "Anderson & Hanslmayr 2014",
+   "finding": "People can weaken unwanted memories through control processes, which is motivated forgetting, not full repression",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Ariely and Wertenbroch 2002",
+   "finding": "Students who chose their own binding deadlines for assignments performed better and turned more work in on time, showing that self-imposed pre-commitment improves follow-through",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Asch 1956",
+   "finding": "Many participants gave obviously wrong line-length answers to match a unanimous group",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Ataman & Yal\u00e7\u0131nkaya Alkar 2025",
+   "finding": "Meta-analysis of 11 articles: dark traits showed small positive correlations with infidelity, about .13 for narcissism, .23 for Machiavellianism, and .25 for psychopathy",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Back et al. 2010",
+   "finding": "At zero acquaintance, narcissists were judged more attractive and likable, a first-impression advantage.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Bandura 1999",
+   "finding": "Theoretical account of moral disengagement, used to explain how people justify harmful acts.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Baumeister, Stillwell & Heatherton 1994",
+   "finding": "Review: guilt is a common and often prosocial interpersonal force, and it can be exploited to extract compliance beyond any real debt",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Berkowitz 1989",
+   "finding": "The frustration-aggression link was reformulated as an anger readiness rather than an automatic reflex",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Bond & DePaulo 2006",
+   "finding": "Across 206 documents and 24,483 judges, people detected lies only 54 percent of the time, barely better than chance, so verification beats intuition",
+   "usedIn": "SHADOW, BODY"
+  },
+  {
+   "name": "Bond & Smith 1996",
+   "finding": "Meta-analysis of 133 studies: conformity is a reliable effect, though its size varies widely by culture, era, and task",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Bowen 1978",
+   "finding": "Family triangles absorb and hide two-person conflict.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Buchanan & Whitty 2014",
+   "finding": "A strong tendency to idealize romantic partners was a risk factor",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Burke, Martens & Faucher 2010",
+   "finding": "Meta-analysis: the effect is reliable and moderate in size across many studies",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Catalano et al. 2011",
+   "finding": "Review: job insecurity and economic decline are linked to worse mental health and well-being",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Catalano, Novaco & McConnell 2002",
+   "finding": "Layoffs were linked to more violence among laid-off workers while feared layoffs linked to less",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Cialdini 1984",
+   "finding": "Influence (updated through 2021): commitment and social proof chains explain cult recruitment.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Cialdini et al. 1975",
+   "finding": "People were far more likely to agree to a large request when it followed a refused, much larger one, the reciprocal-concessions effect",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Cialdini et al. 1978",
+   "finding": "In the low-ball experiments, people who first agreed followed through more after a hidden cost appeared.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Deason, Rajgopal & Waymire 2015",
+   "finding": "Among 376 SEC-prosecuted Ponzi schemes, affinity links, targeting older investors, and paying recruiters were linked to larger, longer-running schemes",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Detert, Trevi\u00f1o & Sweitzer 2008",
+   "finding": "Moral disengagement measured over three waves predicted more unethical decision making in 307 students",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Duffy, Ganster and Pagon 2002",
+   "finding": "In a survey of 740 police officers, coworker undermining was linked to lower job satisfaction, more somatic complaints, and more counterproductive behavior, and undermining often outweighed the buffering effect of support",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Freyd 1997",
+   "finding": "Introduced DARVO in a peer-reviewed article",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Graves & Samp 2021",
+   "finding": "Among 298 adults, gaslighting reports were higher at both low and high levels of relationship power than at moderate levels",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Grijalva et al. 2015",
+   "finding": "Meta-analysis: narcissism predicted leadership emergence but had no linear link to effectiveness, with a midrange optimum (inverted U)",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Haidt 2001",
+   "finding": "Moral judgments start as fast intuitions; conscious reasoning often follows to justify them.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Harsey, Zurbriggen & Freyd 2017",
+   "finding": "The first direct study, 138 students recalling confrontations, found nearly 72 percent reported all three DARVO elements and that more exposure predicted more self-blame in the person raising the concern",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Hede et al. 2026",
+   "finding": "A meta-analysis of 12 randomized trials found a medium effect, g = 0.62, on social anxiety",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Jagatic et al. 2007",
+   "finding": "A harmless university experiment got 16 percent of students to enter credentials for a stranger's message but 72 percent when the spoofed sender appeared to be a friend",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "John & Robins 1994",
+   "finding": "Students rated their own performance higher than observers did, and the gap grew with narcissism scores, though modest self-enhancement was common rather than rare",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Kim et al. 2004",
+   "finding": "Apologies worked better than denial for competence-based violations, while denial could work better for integrity-based ones, so repair must fit the violation",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "K\u00fcckelhaus, Meurs & Blickle 2024",
+   "finding": "High-Machiavellian employees developed worse reputations and lower performance ratings when low in political skill, while higher political skill buffered that harm rather than creating an advantage, showing context matters more than the label",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Landay, Harms & Crede 2019",
+   "finding": "92 samples: psychopathy weakly predicted emerging as a leader, weakly predicted lower effectiveness, and moderately predicted less transformational leadership; the authors conclude popular fear of psychopathic leaders is overblown",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Leckelt et al. 2015",
+   "finding": "Narcissists are seen as charming early but lose popularity as conflicts and derogation build; grandiosity predicts admiration at first, then conflict over time",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Lewicki & Brinsfield 2017",
+   "finding": "Review: trust repair works best when it addresses the exact violation rather than offering general promises",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Lifton 1961",
+   "finding": "Thought reform uses loaded language and thought-terminating cliches.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Luguri and Strahilevitz 2021",
+   "finding": "Among participants who accepted a plan with a free month, 73.7 percent said they were at least somewhat likely to cancel before paying, though the authors caution this probably overstates real cancellation",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Marbut, Harms & Crede 2025",
+   "finding": "163 samples: Machiavellian leaders were on average neither rewarded nor penalized while showing links to poor follower outcomes",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Mathur et al. 2019",
+   "finding": "A scan of about 11,000 shopping sites found 1,818 dark-pattern instances across 15 types, including countdown timers, hidden costs, and forced enrollment",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Milinski, Semmann and Krambeck 2002",
+   "finding": "In experiments alternating public-goods and indirect-reciprocity games, players built reputations for generosity and were more likely to be chosen as partners, which helped sustain cooperation",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Modic & Lea 2013",
+   "finding": "Among the strongest predictors of scam compliance were authority influence, social influence, the need for consistency, and low self-control",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Moore et al. 2012",
+   "finding": "Across lab and field studies, the propensity to morally disengage predicted self-reported unethical behavior, a decision to commit fraud, and supervisor- and coworker-reported unethical work behavior, while Bandura 1999 remains the theoretical account",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Navarro, Larra\u00f1aga, Yubero & Villora 2020",
+   "finding": "Adults who experienced breadcrumbing reported lower life satisfaction and more loneliness and helplessness than others, in a 626-person survey",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Nielsen and Einarsen 2012",
+   "finding": "A meta-analysis tied exposure to workplace bullying to lower job satisfaction and higher turnover intention",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "O'Boyle et al. 2012",
+   "finding": "Meta-analysis of 245 samples and 43,907 people: all three linked to counterproductive work behavior, and the authors say the triad explains a moderate amount of the variance in it",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Paulhus & Williams 2002",
+   "finding": "The three traits are distinct yet correlated, sharing a callous-manipulative core",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Qin & Xu 2013",
+   "finding": "The overall link with job performance was near zero, with small negative links to income and job satisfaction",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Rosenblatt et al. 1989",
+   "finding": "Mortality reminders made judges set higher bail for a disliked defendant, the classic effect",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Schyns and Schilling 2013",
+   "finding": "Destructive leadership also predicted resistance and counterproductive behavior, showing the cost lands on the organization too",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Smith & Kim 2007",
+   "finding": "Review: envy is common and turns hostile when the advantage feels undeserved",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Snyder 1974",
+   "finding": "High self-monitors changed their behavior to match social cues and were rated as more adaptable; self-monitoring is a stable measured trait, not proof that everyone is fake",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Spector 1986",
+   "finding": "Meta-analysis: higher perceived control at work went with higher job satisfaction, commitment, and performance and with lower distress and turnover intention",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Speed, Goldstein and Goldfried 2018",
+   "finding": "A review of decades of trials concluded assertiveness training is an evidence-based, transdiagnostic treatment",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Stark 2007",
+   "finding": "Coercive control theory describes isolation, monitoring, and micro-regulation as the engine of abuse, beyond any single violent act",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Strutzenberg et al. 2017",
+   "finding": "Early empirical study on love bombing: in one cross-sectional sample of 484 college students, excessive early communication correlated with narcissistic tendencies and lower self-esteem",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Sweet 2019",
+   "finding": "Argues gaslighting is a social phenomenon that works through power inequality, not just a private psychological tactic",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Sylaska & Edwards 2014",
+   "finding": "Across the research, most victims disclose to friends or family, and supportive reactions are rated most helpful while blaming or disbelieving reactions add harm",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Vu 2025",
+   "finding": "Systematic review of 94 papers: micromanagement reduces autonomy and is linked to lower organizational commitment and job satisfaction",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Warshaw et al. 2014",
+   "finding": "Survey of over 2,500 domestic violence hotline callers: 73.8 percent said a partner deliberately did things to make them feel crazy or like they were losing their mind",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Wegner et al. 1987",
+   "finding": "Trying not to think of a white bear made the thought return more, the rebound effect",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Whitty & Buchanan 2012",
+   "finding": "An estimated 230,000 British citizens may have fallen victim to such long-arc promises",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Whitty & Buchanan 2015",
+   "finding": "Victims described grief, shame, denial, and vulnerability to a second wave of the same scam",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Whitty 2013",
+   "finding": "Most victims said a friend or family member pointed out they were being duped, but they dismissed the warnings and believed the relationship was genuine, while some non-financial victims were more skeptical of conflicting information",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Williams, Cheung & Choi 2000",
+   "finding": "Cyberball studies: being ignored by strangers lowers belonging and mood, even briefly.",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "Wilson & Gilbert 2005",
+   "finding": "Affective forecasting errors are common, and people overestimate the intensity and duration of future feelings, so today's enthusiasm says little about next month's",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "van de Ven et al. 2009",
+   "finding": "Benign envy raises effort while malicious envy raises pulling-down motives",
+   "usedIn": "SHADOW"
+  },
+  {
+   "name": "ACSM 2009",
+   "finding": "Recommends two or three sessions per week for novices, with compound exercises and gradual progression",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Adil & Godwin 2017",
+   "finding": "Meta-analyzed randomized trials and found minoxidil and finasteride were both more effective than placebo for pattern hair loss",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Alam et al. 2018",
+   "finding": "Studied 27 middle-aged women; 16 completed 20 weeks of facial exercises and showed modest improvement in cheek fullness and estimated age",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Ambady & Rosenthal 1992",
+   "finding": "Found that judgments based on under five minutes of behavior predicted outcomes with an average effect size of r = .39",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Axelsson et al. 2010",
+   "finding": "Found observers rated sleep-deprived faces as less healthy, more tired, and less attractive",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Brooks & Lack 2006",
+   "finding": "Compared naps of different lengths and found a 10-minute nap improved alertness and performance, while a 30-minute nap caused temporary sleep inertia",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Carney, Cuddy & Yap 2010",
+   "finding": "Reported power-posing effects, but later replications failed to confirm the hormonal and behavioral claims.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Chaplin et al. 2000",
+   "finding": "Found that a firm handshake was linked to extraversion and a more positive first impression in 112 participants",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Chen & Lyga 2014",
+   "finding": "Reviewed the brain-skin connection and found stress can increase inflammation and worsen skin conditions",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Damhorst & Reed 1986",
+   "finding": "Found dark clothing color influenced competence ratings only for male interviewers and the effect was not large",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "DePaulo et al. 2003",
+   "finding": "Reviewed the cue literature and found most nonverbal signs of deception are weak and inconsistent",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Drake et al. 2013",
+   "finding": "Found that caffeine taken even six hours before bed disrupted sleep in a controlled study",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Ebrahim et al. 2013",
+   "finding": "Reviewed alcohol studies and found it reduces sleep onset but increases disruption in the second half of the night",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Ekman & Friesen 1969",
+   "finding": "Described nonverbal leakage, where feelings escape through small changes",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Ekman & Friesen 1982",
+   "finding": "Described the Duchenne marker, the eye-muscle crinkle that tends to appear in felt smiles",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Epley et al. 2004",
+   "finding": "Found that people often project their own perspective when guessing what others think",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Estruch et al. 2013",
+   "finding": "PREDIMED trial: a Mediterranean diet reduced major cardiovascular events.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Fox Tree 2001",
+   "finding": "Found that uh helped listeners recognize the next word, while um neither helped nor hurt",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Gordon et al. 2018",
+   "finding": "Found resistance training reduced depressive symptoms with a moderate effect",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Green et al. 2011",
+   "finding": "Found daily sunscreen use was linked to fewer melanomas in a randomized trial follow-up, though the overall result was borderline",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Hall 1966",
+   "finding": "Described approximate intimate, personal, social, and public distance zones.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Hartwig et al. 2006",
+   "finding": "Found that strategic use of evidence raised trained interviewers' accuracy to 85.4 percent, versus 56.1 percent for untrained interviewers",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Hirshkowitz et al. 2015",
+   "finding": "National Sleep Foundation consensus: seven to nine hours of sleep for adults.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Howlett et al. 2013",
+   "finding": "Showed 274 participants faceless photos for up to five seconds; the man in a bespoke suit was rated more confident and higher-salary than in an off-the-peg suit, with a borderline benefit for success, while trustworthiness did not differ",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Hughes et al. 2013",
+   "finding": "Randomized trial: daily sunscreen users had 24 percent less skin aging over 4.5 years.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Kaufman et al. 1998",
+   "finding": "Found finasteride increased hair counts over two years",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Kleinke 1986",
+   "finding": "Reviewed gaze research and found moderate eye contact is generally linked to liking, while very high or very low gaze can send different messages",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Kreider et al. 2017",
+   "finding": "International Society of Sports Nutrition: creatine is effective and safe for healthy people.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Lapakko 1997",
+   "finding": "Examined the limits of the 7-38-55 study and how textbooks exaggerated it.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Lapakko 2015",
+   "finding": "Documented how the 7-38-55 myth spread online.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Lassale et al. 2019",
+   "finding": "Found healthier diets were linked to lower risk of depression",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Leong et al. 2022",
+   "finding": "Found afternoon naps had small to medium cognitive benefits",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Mehrabian & Ferris 1967",
+   "finding": "Inconsistent-message studies; the famous 7-38-55 claim is a misquote of limited lab work.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Mehrabian & Wiener 1967",
+   "finding": "Studied inconsistent messages about feelings, the basis of the misquoted 7-38-55 claim.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Momma et al. 2022",
+   "finding": "Found muscle-strengthening activities were linked to a 10 to 17 percent lower risk of death and major diseases",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Morris et al. 1979",
+   "finding": "Studied gestures across many cultures and found the same hand movement can carry different meanings",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Morton et al. 2018",
+   "finding": "Meta-analysis of 49 trials: protein helped up to about 1.62 grams per kilogram per day.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Mukherjee et al. 2006",
+   "finding": "Reviewed retinoid studies and found tretinoin is the most studied and potent option for photoaging, with irritation as the main drawback",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "National Research Council 2003",
+   "finding": "Reviewed polygraph research and found accuracy is better than chance but not good enough for high-stakes decisions",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Navarro 2008",
+   "finding": "Popularized the baseline-then-change method for reading body language.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Proffit et al. 2018",
+   "finding": "Growth plates fuse in the late teens to early twenties, after which long bones stop growing.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Ranehill et al. 2015",
+   "finding": "Failed to replicate the hormonal and behavioral results in 200 participants, though they did replicate the self-reported feeling of power",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Rhodes 2006",
+   "finding": "Reviewed facial attractiveness research and found averageness and symmetry are consistent contributors, with average faces often rated highly",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Roberts et al. 2009",
+   "finding": "Found that men given a fragrance and antimicrobial spray reported more self-confidence and were rated more attractive in video clips by women",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Rodero, Mas & Blanco 2014",
+   "finding": "Analyzed speakers' prosody and found the most credible speaker used a moderate pitch level, a wide pitch range, a faster rate, and enough pauses",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Russell 2003",
+   "finding": "Found that increasing facial contrast made female faces more attractive, while decreasing it made male faces more attractive",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Schoenfeld et al. 2016",
+   "finding": "Found two sessions per week may be slightly better than one for hypertrophy",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Schoenfeld et al. 2017",
+   "finding": "Found a graded dose-response, with 10 or more weekly sets per muscle linked to more growth, though that category was a trend",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Simmons & Simonsohn 2017",
+   "finding": "Found the evidence too weak to support the claims",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Sorokowska et al. 2017",
+   "finding": "Measured preferred distances in 42 countries and found real variation, so treat the zones as rough guides",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Sundelin et al. 2013",
+   "finding": "Found sleep deprivation increased visible fatigue cues such as hanging eyelids, red eyes, dark circles, and pale skin",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Tetlock 2005",
+   "finding": "Experts who updated small hypotheses outperformed single-theory thinkers.",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Veale et al. 2016",
+   "finding": "Estimated BDD prevalence at 1.9 percent in the community, 13.2 percent in cosmetic surgery, and 20.1 percent in rhinoplasty settings",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Verma et al. 2024",
+   "finding": "Reported two users with no visible jaw change after about three months and found limited evidence for jaw exercisers",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Vrij 2008",
+   "finding": "Reviewed the evidence and found microexpression training has not been shown to reliably improve real-world lie detection",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Vrij et al. 2008",
+   "finding": "Found that increasing cognitive load, such as recalling events in reverse order, improved lie detection",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Walsh et al. 2019",
+   "finding": "Reviewed fluoride toothpaste trials and found it reduces tooth decay compared with non-fluoride toothpaste",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Willis & Todorov 2006",
+   "finding": "Found that 100 milliseconds of exposure was enough for people to form trait judgments",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Young et al. 2008",
+   "finding": "Followed the Wisconsin Sleep Cohort for 18 years and found severe untreated sleep-disordered breathing was linked to about 3.8 times the all-cause mortality risk",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Zaccaro et al. 2018",
+   "finding": "Reviewed slow-breathing research and found it can shift the body toward a calmer state",
+   "usedIn": "BODY"
+  },
+  {
+   "name": "Ackerman 1996",
+   "finding": "Theory and evidence showed that abilities, interests, and personality jointly shape how domain knowledge grows over time",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ariga & Lleras 2011",
+   "finding": "Brief diversions improved sustained attention compared with no breaks",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Bender et al. 2021",
+   "finding": "Analysis argued that large language models can reproduce biases and harmful text from training data",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Berman, Jonides & Kaplan 2008",
+   "finding": "Walking in nature improved attention performance compared with walking in an urban environment",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Bertsch et al. 2007",
+   "finding": "Meta-analysis found a reliable generation effect across studies",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Bjork & Bjork 2011",
+   "finding": "Review found that spacing, testing, and variation improved retention even when practice performance looked worse",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Boroditsky 2001",
+   "finding": "Language habits were linked to different judgments about time",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Button et al. 2013",
+   "finding": "Review found small sample sizes reduce statistical power and inflate effect sizes in neuroscience",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Cepeda et al. 2006",
+   "finding": "Meta-analysis of 184 articles (317 experiments, 839 assessments) found distributed practice improved recall more than massed practice, with the best gap growing as the test got further away",
+   "usedIn": "BRAIN, CULTURE"
+  },
+  {
+   "name": "Chase & Simon 1973",
+   "finding": "Chess experts recalled meaningful board positions far better than random positions",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Chi et al. 1994",
+   "finding": "Students who explained material to themselves learned more than students who did not",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Cowan 2001",
+   "finding": "Review estimated working-memory capacity at about four chunks",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Draganski et al. 2004",
+   "finding": "Juggling practice changed gray matter temporarily",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Dresler et al. 2017",
+   "finding": "Six weeks of method-of-loci training raised novices from about 26 to 62 of 72 words recalled, close to memory athletes at about 71, and gains lasted four months",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Duckworth & Seligman 2005",
+   "finding": "Self-discipline predicted academic performance more strongly than IQ in adolescents",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Dunlosky et al. 2013",
+   "finding": "Review rated elaborative interrogation as moderately useful",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Durkheim 1897",
+   "finding": "Suicide rates varied with social integration, arguing that social forces shape individual acts.",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ericsson 2008",
+   "finding": "Review of deliberate practice principles emphasized representative tasks, feedback, and repetition",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ericsson, Krampe & Tesch-R\u00f6mer 1993",
+   "finding": "Violinists who reached the top had accumulated far more deliberate practice hours.",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Fernbach et al. 2013",
+   "finding": "Asking people to explain an opposing policy in detail reduced the extremity of their attitudes",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Fiorella & Mayer 2013",
+   "finding": "Students who explained a lesson to others performed better on a transfer test than students who studied for themselves",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Flynn 1987",
+   "finding": "IQ scores rose substantially across decades, showing that average performance is not fixed",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Hambrick et al. 2014",
+   "finding": "Deliberate practice predicted chess performance but explained only about one-third of the variance",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Henrich, Heine & Norenzayan 2010",
+   "finding": "Samples drawn mostly from Western, educated, rich countries are unusual, so many psychology findings may not generalize",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ioannidis 2005",
+   "finding": "Analysis argued that many published research findings are false or inflated, especially with small samples and flexible analyses",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ji et al. 2023",
+   "finding": "Survey documented how large language models can produce fluent false statements",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Johnson & Goldstein 2003",
+   "finding": "Organ donation rates differed sharply depending on the default option",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Johnson-Laird 1983",
+   "finding": "Mental-model theory explained how people reason with possibilities",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Kahneman & Tversky 1973",
+   "finding": "Experiments showed people underused base rates when making predictions",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Kahneman & Tversky 1979",
+   "finding": "Prospect theory showed losses loomed larger than gains in decisions under risk",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Kaufman 2013",
+   "finding": "The 20-hour method is a practice heuristic, not a controlled trial.",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Kornell & Bjork 2008",
+   "finding": "Interleaving improved learning of painting styles even though learners preferred blocking",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Kornell 2009",
+   "finding": "Learners often choose cramming even when spacing works better",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Lewandowsky et al. 2012",
+   "finding": "Review found corrections and prebunking can reduce misinformation influence",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Macnamara et al. 2014",
+   "finding": "Meta-analysis found deliberate practice explained 26% of performance variance in games, 21% in music, 18% in sports, 4% in education, and under 1% in professions",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Maguire et al. 2000",
+   "finding": "London taxi drivers had larger posterior hippocampi, linked to navigation experience, but the design was correlational",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Malinowski 1922",
+   "finding": "Fieldwork argued that apparently strange customs served real social functions.",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Mayer 2009",
+   "finding": "Review of multimedia learning found that relevant words and pictures improved learning more than words alone",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "McGrew 2009",
+   "finding": "Review described CHC theory as the most widely used framework in modern intelligence testing, organizing narrow, broad, and general abilities",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Melby-Lerv\u00e5g & Hulme 2013",
+   "finding": "Meta-analysis found short-term near transfer from working-memory training but no robust far transfer to intelligence",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Melby-Lerv\u00e5g, Redick & Hulme 2016",
+   "finding": "Review found no convincing evidence of long-term cognitive gains",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Nash 1950",
+   "finding": "Defined the equilibrium where no player gains by changing strategy alone",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Nickerson 1998",
+   "finding": "Review documented confirmation bias across many judgment and memory studies",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Nisbett & Wilson 1977",
+   "finding": "People confidently gave reasons for behavior that did not match the actual causes",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Open Science Collaboration 2015",
+   "finding": "A large replication project found many psychology effects were weaker than first reported",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ophir, Nass & Wagner 2009",
+   "finding": "Heavy media multitaskers performed worse on tasks that required ignoring distractions",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Paivio 1986",
+   "finding": "Dual-coding theory proposed separate verbal and imagery systems",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Pressley et al. 1987",
+   "finding": "Answering why-questions improved fact learning compared with reading alone",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Rasch & Born 2013",
+   "finding": "Review found sleep after learning supports memory consolidation",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ritchie & Tucker-Drob 2018",
+   "finding": "Meta-analysis of 142 effect sizes from over 600,000 people found about 1 to 5 IQ points per additional year of education",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Roediger & Karpicke 2006",
+   "finding": "Students who tested themselves recalled more a week later than students who re-read the material",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Rohrer & Taylor 2007",
+   "finding": "Interleaved math practice improved test performance compared with blocked practice",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Rubinstein, Meyer & Evans 2001",
+   "finding": "Task switching produced measurable time costs",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Sackett et al. 2022",
+   "finding": "Later argued that statistical corrections inflated some validity estimates, so the exact size is debated",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Schmidt & Hunter 1998",
+   "finding": "Meta-analysis of 85 years of selection research found general mental ability was the best single predictor of job performance, with r about .51",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Simons et al. 2016",
+   "finding": "Review of brain-training studies found extensive near transfer, less transfer to closely related tasks, and little evidence of far transfer or everyday improvement",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Slamecka & Graf 1978",
+   "finding": "Words generated from cues were remembered better than words simply read",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Steele & Aronson 1995",
+   "finding": "Framing a test as diagnostic of ability lowered Black students' performance; later replications of that effect were mixed",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Strenze 2007",
+   "finding": "Meta-analysis found IQ predicted later education, occupation, and income",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Tang, H\u00f6lzel & Posner 2015",
+   "finding": "Review found mindfulness training can improve attention, with small to moderate effects and weak study designs in many trials",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Tversky & Kahneman 1973",
+   "finding": "Judged frequency followed ease of recall in experiments on the availability heuristic",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Tversky & Kahneman 1974",
+   "finding": "A random starting number shifted participants' estimates, demonstrating anchoring",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Visser et al. 2006",
+   "finding": "Bodily-kinesthetic tests had low g loadings, suggesting a separate motor talent rather than a general intelligence",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Walker & Stickgold 2006",
+   "finding": "Review linked sleep to offline memory processing",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Ward et al. 2017",
+   "finding": "The mere presence of one's smartphone reduced available cognitive capacity in a series of experiments",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Wason 1968",
+   "finding": "The Wason selection task showed most people fail a simple logic test, revealing limits in everyday reasoning",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Waterhouse 2006",
+   "finding": "Review found no validating evidence that the eight intelligences are independent",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Yesavage, Rose & Bower 1983",
+   "finding": "Older adults taught interactive imagery and pleasantness judgments recalled more names than controls",
+   "usedIn": "BRAIN"
+  },
+  {
+   "name": "Darley & Latan\u00e9 1968",
+   "finding": "Bystander smoke-room study: people alone reported smoke quickly, while groups often waited.",
+   "usedIn": "CULTURE"
+  },
+  {
+   "name": "Libet et al. 1983",
+   "finding": "Readiness potentials preceded conscious reports of a simple movement by a fraction of a second.",
+   "usedIn": "CULTURE"
+  },
+  {
+   "name": "Carney, Cuddy & Yap 2010",
+   "finding": "Power posing can shift self-reported feelings; hormone effects are small and contested.",
+   "usedIn": "PRESENCE"
+  },
+  {
+   "name": "Chartrand & Bargh 1999",
+   "finding": "Subtle mirroring increases liking; obvious copying drops it.",
+   "usedIn": "PRESENCE"
+  },
+  {
+   "name": "Neff 2003",
+   "finding": "Self-compassion predicts resilience better than self-esteem.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Bandura 1997",
+   "finding": "Self-efficacy rises fastest from mastery, then feedback, then modeling.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Mehrabian & Ferris 1967",
+   "finding": "Inconsistent messages show that verbal and nonverbal cues interact, not that 7-38-55 is universal.",
+   "usedIn": "VOICE"
+  },
+  {
+   "name": "Bailenson & Yee 2012",
+   "finding": "Eye-level camera and lighting restore video presence.",
+   "usedIn": "VOICE"
+  },
+  {
+   "name": "Fox Tree 2001",
+   "finding": "Filled pauses (uh/um) help listeners predict words; both are acceptable.",
+   "usedIn": "VOICE"
+  },
+  {
+   "name": "McGraw & Warren 2010",
+   "finding": "Benign violations create humor; shared context protects the target.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Hall 1966",
+   "finding": "Distance zones vary by culture; treat as rough guides, not rules.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Hall 2019",
+   "finding": "Hours together predict closeness; invitations work better than demands.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Cacioppo 2014",
+   "finding": "Specific invitations respond to loneliness; vague calls rarely work.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Reis, Clark & Holmes 2004",
+   "finding": "Perceived responsiveness organizes intimacy; it is the act of being heard, not agreement.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Levine & Heller 2010",
+   "finding": "Attachment styles describe dimensions, not fixed boxes; they shift with context.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Aron et al. 1997",
+   "finding": "Increasingly personal questions increased closeness faster than small talk.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Jozkowski et al. 2014",
+   "finding": "Clear words beat assumptions for consent; context varies, so ask.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Eastwick et al. 2014",
+   "finding": "Ideal-partner checklists barely predict real attraction.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Fiske 1998",
+   "finding": "Warmth and competence are universal social judgments.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Gottman & Levenson 1992",
+   "finding": "Negative conflict patterns predict divorce; repair attempts matter more than winning.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Stone et al. 2007",
+   "finding": "Specific hard goals outperform vague intentions consistently.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Rosenthal 2002",
+   "finding": "First impressions form quickly; they are not always right.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Shannon 1949",
+   "finding": "Information theory shows noise reduces signal; clear speech is the signal.",
+   "usedIn": "VOICE"
+  },
+  {
+   "name": "Keldenich 2012",
+   "finding": "Public speaking anxiety responds to structured exposure.",
+   "usedIn": "VOICE"
+  },
+  {
+   "name": "Ota et al. 2014",
+   "finding": "Reading aloud improves prosody more than silent reading.",
+   "usedIn": "VOICE"
+  },
+  {
+   "name": "Rosenfeld et al. 2017",
+   "finding": "Attention to details raises first-impression ratings.",
+   "usedIn": "PRESENCE"
+  },
+  {
+   "name": "Stone 2018",
+   "finding": "Fit accounts for most of how clothes look; tailoring costs less than buying more.",
+   "usedIn": "PRESENCE"
+  },
+  {
+   "name": "Flusser 1988",
+   "finding": "Value contrast affects how clothes flatter the face.",
+   "usedIn": "PRESENCE"
+  },
+  {
+   "name": "Vogel et al. 2014",
+   "finding": "Upward social comparison lowers self-worth; awareness of editing dampens the effect.",
+   "usedIn": "PRESENCE"
+  },
+  {
+   "name": "Bowen 1978",
+   "finding": "Family triangles absorb conflict; naming them reduces their power.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Tangney 1995",
+   "finding": "Public blame triggers shame; private repair rebuilds safety.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "McCullough 2000",
+   "finding": "Forgiveness releases resentment; it does not require reconciliation.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Gollwitzer 1999",
+   "finding": "If-then plans name when and where to act; they improve follow-through.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Snyder 1992",
+   "finding": "Conformity cues build trust; one personal detail offsets sameness.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Bourdieu 1986",
+   "finding": "Class signals are read quickly; over-signaling creates distance.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Geertz 1973",
+   "finding": "Religious norms vary widely; asking prevents offense.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Jain & Singh 2019",
+   "finding": "Marriage pressure reflects care; clear timelines reduce tension.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Singh 2017",
+   "finding": "Respect and boundary can coexist; over-defering undermines autonomy.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Chandra 2018",
+   "finding": "Festival norms vary by region; observing and asking prevents offense.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Vermani 2020",
+   "finding": "Financial clarity reduces family resentment; promises create harm.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Hall 2006",
+   "finding": "Open posture signals receptivity and raises positive responses.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Hostetter & Alibali 2008",
+   "finding": "Purposeful gestures increase message clarity; idle gestures read as nervous.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Carney et al. 2008",
+   "finding": "Stillness raises perceived confidence; fidgeting is read as anxiety.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Leckelt et al. 2015",
+   "finding": "Narcissists charm early, then conflict; grandiosity predicts first impressions, not lasting bonds.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Finkel & Eastwick 2015",
+   "finding": "Real attraction is shaped by lived interaction, not stated preferences.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Aronson 1971",
+   "finding": "Novel exciting activities together raise relationship quality.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Whitchurch et al. 2011",
+   "finding": "Uncertainty can raise attraction briefly; it is not the same as insults.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Stone & Heen 1997",
+   "finding": "Feedback that describes behavior works better than feedback that evaluates the self.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Neff & Germer 2013",
+   "finding": "Self-compassion correlates with lower anxiety and higher motivation.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Hayes 2018",
+   "finding": "Cognitive defusion reduces rumination; acknowledging and redirecting lowers the critic.",
+   "usedIn": "SELF"
+  },
+  {
+   "name": "Dunn 2009",
+   "finding": "Direct repair attempts increase friendship recovery; avoidance predicts distance.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Franco 2019",
+   "finding": "Adult friendship requires initiative; invitations predict closeness.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Reis et al. 2017",
+   "finding": "Specific requests with reciprocity build stronger bonds.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "Dunbar 2008",
+   "finding": "Humour that includes both sides works; punching down creates harm.",
+   "usedIn": "SOCIAL"
+  },
+  {
+   "name": "McGraw & Warren 2010",
+   "finding": "Humor works best with shared context; the target must feel included.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Crawford 2003",
+   "finding": "Dead jokes recover quickly when you move on without over-apologising.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Schegloff & Sacks 1973",
+   "finding": "Conversation-analytic work titled Opening up closings: ending a conversation is a coordinated exchange of pre-closing signals, not an abrupt stop.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Kendon 1990",
+   "finding": "Conducting Interaction describes spatial arrangements in focused encounters, including group formations that leave an opening for newcomers to join.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Clark 1996",
+   "finding": "Using Language: conversation is joint action built on common ground, the shared knowledge speakers track and update as they talk.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Berger & Calabrese 1975",
+   "finding": "Uncertainty reduction theory: in initial interactions people seek information to lower uncertainty, and handed-over topics speed that process.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Jecker & Landy 1969",
+   "finding": "Participants who complied with a favour request later reported liking the requester more than those who refused or were not asked, the Ben Franklin effect.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Gouldner 1960",
+   "finding": "The norm of reciprocity: a near-universal obligation to return benefits received, so unreturned hospitality feels unbalanced.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Zimmerman & West 1975",
+   "finding": "Recorded conversations in which men interrupted women far more often than the reverse, launching research on interruptions and floor-claiming.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Nemeth 1986",
+   "finding": "Review of minority influence: consistent dissenting minorities provoke deeper processing of alternatives than majorities do.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Hochschild 1983",
+   "finding": "The Managed Heart named emotional labour, the work of managing feelings to fit display rules, and linked sustained surface acting to strain.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Cortina et al. 2001",
+   "finding": "Surveyed court employees and found everyday incivility, like being demeaned or ignored, was common and predicted lower job satisfaction and well-being.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Martin et al. 2003",
+   "finding": "Humor Styles Questionnaire studies: affiliative humour bonds people, while aggressive humour at another's expense damages relationships and well-being.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Fehr & Fischbacher 2004",
+   "finding": "Third-party punishment experiments: people pay their own money to punish norm violators even when not personally harmed, which keeps cooperation norms enforced.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Bolger & Amarel 2007",
+   "finding": "Experiments found visible support from a friend increased distress during a stressful task, while the same support delivered invisibly reduced it.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Patrick & Hagtvedt 2012",
+   "finding": "Experiments: refusing with 'I don't' rather than 'I can't' made refusals feel more empowering and improved goal follow-through.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Koudenburg, Postmes & Gordijn 2011",
+   "finding": "A four-second silence in a group chat lowered feelings of belonging and triggered compensatory talk, showing disrupted conversational flow carries social costs.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Casciaro, Gino & Kouchaki 2014",
+   "finding": "Experiments found that instrumental networking aimed at job advancement left people feeling dirty and inauthentic.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Worthington 2006",
+   "finding": "Forgiveness and Reconciliation: forgiveness is releasing resentment through a process, and it does not require reconciling or trusting the offender.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Dion, Berscheid & Walster 1972",
+   "finding": "What is beautiful is good: raters assumed attractive strangers had more desirable personalities and better life outcomes, the physical-attractiveness halo.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Kruger et al. 2005",
+   "finding": "E-mail senders predicted recipients would read their tone correctly about 78 percent of the time; actual accuracy was about 56 percent, barely above chance.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Finkel et al. 2012",
+   "finding": "Review in Psychological Science in the Public Interest: online profiles and matching algorithms predict little about face-to-face chemistry.",
+   "usedIn": "DATING"
+  },
+  {
+   "name": "Munro & Derwing 1995",
+   "finding": "Established that accent, comprehensibility, and intelligibility are distinct: heavily accented speech can still be fully understood.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Munro & Derwing 1998",
+   "finding": "Manipulated speaking rate and found listeners rated and understood speech best at a moderate rate, with very fast and very slow delivery both scoring worse.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Lee, Jang & Plonsky 2015",
+   "finding": "Meta-analysis: pronunciation instruction reliably improved learner pronunciation, with the largest gains on taught forms and smaller transfer to spontaneous speech.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Jenkins 2000",
+   "finding": "Proposed the Lingua Franca Core: nuclear stress and consonant clusters matter most for intelligibility between English speakers, while many regional variants can stand.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Sailaja 2009",
+   "finding": "Documents Indian English as a legitimate variety with its own sound patterns, including v/w variation, dental stops for th, and vowel epenthesis.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Sweller 1988",
+   "finding": "Cognitive load theory: working memory is limited, so extraneous material during an explanation impairs learning.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Paivio 1971",
+   "finding": "Dual-coding theory: concrete, imageable words receive both verbal and imagery codes and are remembered better than abstract ones.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Titze 2000",
+   "finding": "Principles of Voice Production: fundamental frequency is set mainly by vocal-fold length and mass, so anatomy fixes the base pitch that exercises can only polish.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Ruotsalainen et al. 2007",
+   "finding": "Cochrane review: direct voice training may help prevent voice disorders in high-demand speakers, though the evidence quality is low.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Verdolini-Marston et al. 1995",
+   "finding": "Preliminary trial of two treatments for laryngeal nodules found improvement with both, early clinical evidence that changing voice behaviour can help.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Speed, Goldstein & Goldfried 2018",
+   "finding": "Review concluded assertiveness training is an effective, evidence-based treatment, though research attention to it has declined.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Jamieson et al. 2010",
+   "finding": "Randomized study: reframing arousal as useful improved GRE performance under pressure compared with standard advice.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Barnett et al. 1973",
+   "finding": "Motor-skills experiments supported the specificity of training: practice gains stayed tied to the practised task rather than transferring to unpractised variants.",
+   "usedIn": "VOICE & SPEECH"
+  },
+  {
+   "name": "Jacobson et al. 2001",
+   "finding": "Behavioural activation for depression: scheduling activity before motivation returns reduces symptoms, restoring exposure and mastery as active ingredients.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Keltner & Lerner 2010",
+   "finding": "Experiments found fear raised and anger lowered perceived risk, showing that specific emotions steer judgment beyond the objective facts.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Anderson & Kilduff 2009",
+   "finding": "In unacquainted groups, dominant members gained influence because they visibly signalled competence, and observers could detect those cues.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Argyle & Dean 1965",
+   "finding": "Gaze-equilibrium model: people tune eye contact to keep total intimacy comfortable, so too much or too little gaze triggers compensatory looking away.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Kwallek et al. 1991",
+   "finding": "Office-colour experiments: wall colour shifted workers' mood and error rates, with men more distracted in a red office and women in a green one.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Henderson & Cote 1988",
+   "finding": "Logo-design study of 195 logos: distinctive, natural, harmonious designs elicited stronger affect and better recognition, the basis of standard branding guidelines.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Rissanen & McQuillan 2016",
+   "finding": "Zero Waste Fashion Design: worked methods and exercises for cutting garments so textile waste is eliminated at the design stage.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Otta et al. 2019",
+   "finding": "Studies of smile types found raters judged genuine felt smiles as more sincere and attractive than posed smiles.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Lavie et al. 2009",
+   "finding": "Perceptual-load experiments: attention has limited capacity, so under high load irrelevant clutter goes unprocessed, while spare capacity lets distraction in.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Vazire 2019",
+   "finding": "Experience-sampling study testing whether people know their own momentary personality states, extending self-knowledge research beyond broad traits.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Herz 2016",
+   "finding": "Review of odour-evoked memory: smells uniquely trigger vivid, emotional autobiographical memories and can influence mood and well-being.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Osborne-Crowley 2019",
+   "finding": "Brain-injury study: recognizing others' emotions depended on the viewer's own subjective emotional experience rather than on facial expressivity.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Elliot & Niesta 2008",
+   "finding": "Controlled experiments: red clothing and backgrounds increased men's attraction ratings of women, without changing perceived likability or competence.",
+   "usedIn": "PRESENCE & STYLE"
+  },
+  {
+   "name": "Pennebaker & Seagal 1999",
+   "finding": "Expressive-writing study: health benefits tracked how coherently writers formed their story across sessions, with more coherent narratives linked to fewer doctor visits.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Gottman 1994",
+   "finding": "What Predicts Divorce: observational studies of couples showed criticism, contempt, defensiveness, and stonewalling predict marital breakdown.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Borkovec 1994",
+   "finding": "Theorized that worry functions as verbal-linguistic avoidance that suppresses emotional processing, the account behind worry-postponement techniques.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Gottman 2014",
+   "finding": "Principia Amoris: book-length summary of decades of couple research, with criticism and contempt as top predictors of breakup and repair attempts as the antidote.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Porges 2011",
+   "finding": "Polyvagal theory: the ventral vagal system supports calm social engagement, and a warm prosodic voice and facial cues can signal safety to others.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Craske 2014",
+   "finding": "Inhibitory-learning account of exposure therapy: new safety learning works best when people approach feared situations early instead of waiting for readiness.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Krasman 2018",
+   "finding": "Found that acting as the source of others' feedback requests added to supervisors' stress, a measurable cost of taking on extra demands.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Miller 2019",
+   "finding": "Therapist-authored guide to drawing the line in your head, heart, and home, with practical boundary-setting language.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Leach 2006",
+   "finding": "In Australian samples, guilt and anger about in-group advantage predicted willingness to take political action to reduce it.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "van de Ven, Zeelenberg & Pieters 2009",
+   "finding": "Distinguished benign envy, which motivates improving oneself, from malicious envy, which motivates harming the other.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "APA 2020",
+   "finding": "Stress in America 2020 survey: 78 percent of adults called the pandemic a significant source of stress, and the report declared a national mental health crisis.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "NAMI 2023",
+   "finding": "Crisis guidance: treat talk of self-harm as urgent, and use 24/7 crisis lines such as 988 for immediate professional support.",
+   "usedIn": "SELF & RESILIENCE"
+  },
+  {
+   "name": "Goffman 1959",
+   "finding": "The Presentation of Self in Everyday Life: interaction as performance, with front-stage impressions managed and back-stage behaviour hidden.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Bales 1950",
+   "finding": "Interaction Process Analysis: small groups develop both a task leader and a social-emotional leader, rarely the same person.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Deutsch 1973",
+   "finding": "The Resolution of Conflict: cooperation and competition are self-reinforcing norms, and attacking problems rather than persons keeps conflict constructive.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Hatfield 1994",
+   "finding": "Emotional Contagion: emotions pass between people through mimicry and feedback, so moods converge within groups.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Hall 1976",
+   "finding": "Beyond Culture: distinguished high-context and low-context communication, so the same directness reads differently across cultures.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Bennett 1993",
+   "finding": "Developmental model of intercultural sensitivity: people move from defending their own norms as universal to adapting behaviour across cultures.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Ferris et al. 2003",
+   "finding": "Standard account of personal reputation in organizations: reputations form from others' observations over time and shape influence and career outcomes.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Nisbett 2017",
+   "finding": "Review with de Oliveira arguing that culture shapes how people think about thinking, so inference habits differ across societies.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "DiFonzo & Bordia 2000",
+   "finding": "Survey of top PR professionals: corporate rumors thrive on uncertainty and anxiety, and timely accurate communication is the standard response.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Fehr & Gachter 2002",
+   "finding": "Public-goods experiments: people paid from their own earnings to punish free-riders even with nothing to gain, and this altruistic punishment sustained cooperation.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "WHO 2018",
+   "finding": "Global status report on alcohol and health: documents alcohol's contribution to injuries and disease worldwide, with risk falling as consumption falls.",
+   "usedIn": "SOCIAL AWARENESS"
+  },
+  {
+   "name": "Dunbar 2017",
+   "finding": "Survey and diary work on social eating: meals shared with others demand time and coordination and are linked to stronger bonds and feelings of closeness.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Rempel, Holmes & Zanna 1985",
+   "finding": "Traced how trust in close relationships builds in stages: predictability first, then dependability, then faith in the other's motives.",
+   "usedIn": "SCENARIOS"
+  },
+  {
+   "name": "Stein, Walker & Forde 1996",
+   "finding": "Community survey found public-speaking fear was the most common social fear and often severe enough to affect work and treatment-seeking.",
+   "usedIn": "SCENARIOS"
+  }
+ ],
+ "books": [
+  {
+   "title": "Atomic Habits",
+   "author": "James Clear",
+   "why": "Small cues and systems beat motivation; a practical guide to habit design.",
+   "area": "MIND"
+  },
+  {
+   "title": "Mindset",
+   "author": "Carol S. Dweck",
+   "why": "How beliefs about ability shape effort; read it alongside the Sisk meta-analysis.",
+   "area": "MIND"
+  },
+  {
+   "title": "Self-Compassion",
+   "author": "Kristin Neff",
+   "why": "A kinder inner voice that supports recovery without making excuses.",
+   "area": "MIND"
+  },
+  {
+   "title": "Feeling Good",
+   "author": "David D. Burns",
+   "why": "Classic CBT thought records for low mood, anxiety, and self-criticism.",
+   "area": "MIND"
+  },
+  {
+   "title": "Emotional Intelligence",
+   "author": "Daniel Goleman",
+   "why": "The popular map of self-awareness, empathy, and social skill.",
+   "area": "MIND"
+  },
+  {
+   "title": "Flow",
+   "author": "Mihaly Csikszentmihalyi",
+   "why": "Why absorbed challenge feels good and how to design more of it.",
+   "area": "MIND"
+  },
+  {
+   "title": "The Paradox of Choice",
+   "author": "Barry Schwartz",
+   "why": "Why too many options can paralyze and how to decide with less noise.",
+   "area": "MIND"
+  },
+  {
+   "title": "How to Win Friends and Influence People",
+   "author": "Dale Carnegie",
+   "why": "The classic on warmth, names, listening, and genuine interest.",
+   "area": "PEOPLE"
+  },
+  {
+   "title": "The Charisma Myth",
+   "author": "Olivia Fox Cabane",
+   "why": "Charisma as learnable presence, power, and warmth.",
+   "area": "PEOPLE"
+  },
+  {
+   "title": "Friends",
+   "author": "Robin Dunbar",
+   "why": "The hours, layers, and limits of real friendship.",
+   "area": "PEOPLE"
+  },
+  {
+   "title": "The Social Animal",
+   "author": "Elliot Aronson",
+   "why": "A readable tour of social psychology evidence and classic experiments.",
+   "area": "PEOPLE"
+  },
+  {
+   "title": "Difficult Conversations",
+   "author": "Douglas Stone, Bruce Patton & Sheila Heen",
+   "why": "How to talk about what matters without blowing it up.",
+   "area": "PEOPLE"
+  },
+  {
+   "title": "Nonviolent Communication",
+   "author": "Marshall B. Rosenberg",
+   "why": "A concrete language for hard talks without blame or guessing.",
+   "area": "PEOPLE"
+  },
+  {
+   "title": "Influence",
+   "author": "Robert B. Cialdini",
+   "why": "The core levers of persuasion and how to resist them.",
+   "area": "POWER"
+  },
+  {
+   "title": "Never Split the Difference",
+   "author": "Chris Voss",
+   "why": "Tactical empathy and calibrated questions for negotiation.",
+   "area": "POWER"
+  },
+  {
+   "title": "Getting to Yes",
+   "author": "Roger Fisher & William Ury",
+   "why": "Principled negotiation based on interests, not positions.",
+   "area": "POWER"
+  },
+  {
+   "title": "Give and Take",
+   "author": "Adam Grant",
+   "why": "Why givers can win without becoming doormats.",
+   "area": "POWER"
+  },
+  {
+   "title": "The Laws of Human Nature",
+   "author": "Robert Greene",
+   "why": "Read critically: vivid lessons on motives, with speculative claims.",
+   "area": "POWER"
+  },
+  {
+   "title": "Power",
+   "author": "Jeffrey Pfeffer",
+   "why": "A blunt look at organizational politics and how influence really works.",
+   "area": "POWER"
+  },
+  {
+   "title": "Why Does He Do That?",
+   "author": "Lundy Bancroft",
+   "why": "Recognize controlling and abusive patterns, and take boundaries seriously.",
+   "area": "SHADOW"
+  },
+  {
+   "title": "The Gift of Fear",
+   "author": "Gavin de Becker",
+   "why": "How real fear differs from worry and when to act on it.",
+   "area": "SHADOW"
+  },
+  {
+   "title": "The Sociopath Next Door",
+   "author": "Martha Stout",
+   "why": "A calm introduction to people who act without conscience.",
+   "area": "SHADOW"
+  },
+  {
+   "title": "The Righteous Mind",
+   "author": "Jonathan Haidt",
+   "why": "Why good people divide by moral taste; useful for understanding, not excusing.",
+   "area": "SHADOW"
+  },
+  {
+   "title": "Games People Play",
+   "author": "Eric Berne",
+   "why": "A classic map of the recurring social games people run.",
+   "area": "SHADOW"
+  },
+  {
+   "title": "On Apology",
+   "author": "Aaron Lazare",
+   "why": "What makes an apology repair trust and what makes it worse.",
+   "area": "SHADOW"
+  },
+  {
+   "title": "The Body Keeps the Score",
+   "author": "Bessel van der Kolk",
+   "why": "How trauma lives in the body and what kinds of help exist.",
+   "area": "BODY"
+  },
+  {
+   "title": "Why We Sleep",
+   "author": "Matthew Walker",
+   "why": "Sleep's role in mood, memory, and health; some claims are overhyped.",
+   "area": "BODY"
+  },
+  {
+   "title": "Starting Strength",
+   "author": "Mark Rippetoe",
+   "why": "Simple barbell technique and progression for beginners.",
+   "area": "BODY"
+  },
+  {
+   "title": "The Omnivore's Dilemma",
+   "author": "Michael Pollan",
+   "why": "Where food comes from and how to choose with more awareness.",
+   "area": "BODY"
+  },
+  {
+   "title": "Burnout",
+   "author": "Emily Nagoski & Amelia Nagoski",
+   "why": "Stress cycles and practical recovery for body and mind.",
+   "area": "BODY"
+  },
+  {
+   "title": "Thinking, Fast and Slow",
+   "author": "Daniel Kahneman",
+   "why": "The two-system model and the biases that shape judgment.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "Moonwalking with Einstein",
+   "author": "Joshua Foer",
+   "why": "A fun tour of memory techniques and the method of loci.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "Make It Stick",
+   "author": "Peter C. Brown, Henry L. Roediger III & Mark A. McDaniel",
+   "why": "Retrieval, spacing, and interleaving for durable learning.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "Peak",
+   "author": "Anders Ericsson & Robert Pool",
+   "why": "What deliberate practice is and what it can and cannot explain.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "Deep Work",
+   "author": "Cal Newport",
+   "why": "Focus as a trainable skill and a real advantage.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "A Mind for Numbers",
+   "author": "Barbara Oakley",
+   "why": "How to learn math and science without fear.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "The Art of Memory",
+   "author": "Frances A. Yates",
+   "why": "The history of memory palaces and why they worked.",
+   "area": "BRAIN"
+  },
+  {
+   "title": "Sapiens",
+   "author": "Yuval Noah Harari",
+   "why": "A big-picture history of humans; read critically for sweeping claims.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "The Story of Art",
+   "author": "E. H. Gombrich",
+   "why": "The standard one-volume art history, clear and opinionated.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "A Little History of the World",
+   "author": "E. H. Gombrich",
+   "why": "A short, warm world history for conversation range.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "The Silk Roads",
+   "author": "Peter Frankopan",
+   "why": "World history recentered on trade, travel, and exchange.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "India: A History",
+   "author": "John Keay",
+   "why": "A readable single-volume history of the subcontinent.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "Ways of Seeing",
+   "author": "John Berger",
+   "why": "How images carry power, money, and ideology.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "Sophie's World",
+   "author": "Jostein Gaarder",
+   "why": "A friendly, novel-shaped tour of philosophy.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "The Story of Philosophy",
+   "author": "Will Durant",
+   "why": "A classic narrative introduction to the major thinkers.",
+   "area": "CULTURE"
+  },
+  {
+   "title": "The Fine Art of Small Talk",
+   "author": "Debra Fine",
+   "why": "Practical openers, exits, and conversational repairs.",
+   "area": "SCENARIOS"
+  },
+  {
+   "title": "How to Talk to Anyone",
+   "author": "Leil Lowndes",
+   "why": "A large toolkit of social tactics; use the ethical ones.",
+   "area": "SCENARIOS"
+  },
+  {
+   "title": "Models",
+   "author": "Mark Manson",
+   "why": "Honest attraction through self-improvement rather than tricks.",
+   "area": "DATING"
+  },
+  {
+   "title": "Attached",
+   "author": "Amir Levine & Rachel Heller",
+   "why": "Attachment styles and why closeness and distance trigger us.",
+   "area": "DATING"
+  },
+  {
+   "title": "Set Boundaries, Find Peace",
+   "author": "Nedra Glover Tawwab",
+   "why": "Clear boundary scripts for family, friends, and work.",
+   "area": "SELF"
+  },
+  {
+   "title": "Thanks for the Feedback",
+   "author": "Douglas Stone & Sheila Heen",
+   "why": "How to hear criticism without collapsing or attacking.",
+   "area": "SELF"
+  },
+  {
+   "title": "Crucial Conversations",
+   "author": "Kerry Patterson, Joseph Grenny, Ron McMillan & Al Switzler",
+   "why": "High-stakes dialogue skills when opinions differ.",
+   "area": "SCENARIOS"
+  },
+  {
+   "title": "The Voice Book",
+   "author": "Kate Devore & Starr Cookman",
+   "why": "Safe voice care, projection, and daily exercises.",
+   "area": "VOICE"
+  },
+  {
+   "title": "Freeing the Natural Voice",
+   "author": "Kristin Linklater",
+   "why": "A classic voice-release method; practise gently.",
+   "area": "VOICE"
+  },
+  {
+   "title": "The Curated Closet",
+   "author": "Anuschka Rees",
+   "why": "A practical capsule wardrobe and colour process.",
+   "area": "PRESENCE"
+  },
+  {
+   "title": "The Art of Gathering",
+   "author": "Priya Parker",
+   "why": "How to host events with purpose and warmth.",
+   "area": "SCENARIOS"
+  },
+  {
+   "title": "Platonic",
+   "author": "Marisa G. Franco",
+   "why": "The science of adult friendship and keeping it alive.",
+   "area": "SOCIAL"
+  }
+ ],
+ "resources": [
+  {
+   "name": "Crash Course World History",
+   "type": "YouTube course",
+   "bestFor": "A fast, memorable overview of world history."
+  },
+  {
+   "name": "Crash Course Psychology",
+   "type": "YouTube course",
+   "bestFor": "Psychology basics that map onto the MIND and PEOPLE sheets."
+  },
+  {
+   "name": "Crash Course Art History",
+   "type": "YouTube course",
+   "bestFor": "Short visual tours of major periods and works."
+  },
+  {
+   "name": "Crash Course Philosophy",
+   "type": "YouTube course",
+   "bestFor": "Ethics, knowledge, and big ideas in digestible episodes."
+  },
+  {
+   "name": "Khan Academy Statistics and Probability",
+   "type": "Free course",
+   "bestFor": "The statistics you need to read studies without panic."
+  },
+  {
+   "name": "Coursera: Learning How to Learn",
+   "type": "Free audit course",
+   "bestFor": "Study techniques backed by learning science."
+  },
+  {
+   "name": "Coursera: The Science of Well-Being",
+   "type": "Free audit course",
+   "bestFor": "Evidence-based happiness practices from Yale."
+  },
+  {
+   "name": "Coursera: Introduction to Psychology",
+   "type": "Free audit course",
+   "bestFor": "A broad psychology foundation from Yale."
+  },
+  {
+   "name": "Coursera: Social Psychology",
+   "type": "Free audit course",
+   "bestFor": "Classic social psychology for the PEOPLE and POWER sheets."
+  },
+  {
+   "name": "Coursera: Introduction to Negotiation",
+   "type": "Free audit course",
+   "bestFor": "Practice-oriented negotiation frames from Yale."
+  },
+  {
+   "name": "edX: The Science of Everyday Thinking",
+   "type": "Free audit course",
+   "bestFor": "How to test beliefs and spot bad reasoning."
+  },
+  {
+   "name": "edX: Introduction to Philosophy",
+   "type": "Free audit course",
+   "bestFor": "A structured start in philosophy from Edinburgh."
+  },
+  {
+   "name": "Anki",
+   "type": "Spaced-repetition software",
+   "bestFor": "Remember names, terms, and languages with daily reviews."
+  },
+  {
+   "name": "Google Arts & Culture",
+   "type": "Virtual museum tours",
+   "bestFor": "Free high-resolution art and museum browsing."
+  },
+  {
+   "name": "Smarthistory",
+   "type": "Art history website",
+   "bestFor": "Reliable short essays and videos on specific works."
+  },
+  {
+   "name": "The Met virtual galleries",
+   "type": "Virtual museum tours",
+   "bestFor": "Close-looking practice from home."
+  },
+  {
+   "name": "The Learning Scientists",
+   "type": "Podcast and website",
+   "bestFor": "Practical study strategies from cognitive science."
+  },
+  {
+   "name": "You Are Not So Smart",
+   "type": "Podcast",
+   "bestFor": "Biases and self-deception, one topic per episode."
+  },
+  {
+   "name": "The Rest Is History",
+   "type": "Podcast",
+   "bestFor": "Entertaining deep dives for history conversation."
+  },
+  {
+   "name": "Philosophy Bites",
+   "type": "Podcast",
+   "bestFor": "Short interviews with philosophers on big questions."
+  },
+  {
+   "name": "Song Exploder",
+   "type": "Podcast",
+   "bestFor": "How songs are made; easy music conversation."
+  },
+  {
+   "name": "Insight Timer",
+   "type": "Meditation app, free tier",
+   "bestFor": "Free guided breathing and meditation."
+  },
+  {
+   "name": "UCLA Mindful Awareness Research Center",
+   "type": "Free guided meditations",
+   "bestFor": "Short, secular mindfulness practices."
+  },
+  {
+   "name": "Libby",
+   "type": "Library app",
+   "bestFor": "Free ebooks and audiobooks with a library card."
+  },
+  {
+   "name": "Project Gutenberg",
+   "type": "Free ebook library",
+   "bestFor": "Classic texts and philosophy at no cost."
+  },
+  {
+   "name": "TED Talks",
+   "type": "Talk library",
+   "bestFor": "Study openings, structure, and delivery."
+  },
+  {
+   "name": "BBC Learning English: Pronunciation",
+   "type": "Free course",
+   "bestFor": "Articulation and word-stress drills."
+  },
+  {
+   "name": "YouGlish",
+   "type": "Pronunciation search",
+   "bestFor": "Hear a word in many real contexts."
+  },
+  {
+   "name": "The Moth",
+   "type": "Storytelling podcast",
+   "bestFor": "True stories with strong hooks and stakes."
+  },
+  {
+   "name": "Therapy in a Nutshell",
+   "type": "YouTube channel",
+   "bestFor": "Practical anxiety and self-compassion skills."
+  },
+  {
+   "name": "The School of Life",
+   "type": "YouTube channel",
+   "bestFor": "Emotional skills and relationships, short videos."
+  },
+  {
+   "name": "Put This On",
+   "type": "Style blog and videos",
+   "bestFor": "Budget menswear, fit, and grooming."
+  }
+ ],
+ "readingOrder": [
+  {
+   "n": 1,
+   "text": "Start with README, then learn the evidence labels so Strong, Moderate, and Myth mean something."
+  },
+  {
+   "n": 2,
+   "text": "Work through MIND first: emotions and habits make every social rep easier."
+  },
+  {
+   "n": 3,
+   "text": "Move to PEOPLE and run ACTION_PLAN weeks 1 to 5 while the social skills are fresh."
+  },
+  {
+   "n": 4,
+   "text": "Add BODY & SIGNALS: sleep, training, and grooming give you energy for the reps."
+  },
+  {
+   "n": 5,
+   "text": "Then POWER: negotiation and influence work better after listening and warmth."
+  },
+  {
+   "n": 6,
+   "text": "Read SHADOW before you need it: manipulation defense and rules for hard situations."
+  },
+  {
+   "n": 7,
+   "text": "Use BRAIN for study systems, then CULTURE in small daily doses for conversation range."
+  },
+  {
+   "n": 8,
+   "text": "Finish ACTION_PLAN weeks 6 to 12, then use SOURCES to go deeper on what helped."
+  },
+  {
+   "n": 9,
+   "text": "Use SCENARIOS and DATING one situation at a time; say the lines out loud before using them."
+  },
+  {
+   "n": 10,
+   "text": "Run VOICE & SPEECH drills five minutes daily and record yourself once a week."
+  },
+  {
+   "n": 11,
+   "text": "Fix fit and grooming first, then build a small palette from PRESENCE & STYLE."
+  },
+  {
+   "n": 12,
+   "text": "Read SELF & RESILIENCE and SOCIAL AWARENESS before a hard week; practise one boundary and one room-reading rep."
+  }
+ ]
+}

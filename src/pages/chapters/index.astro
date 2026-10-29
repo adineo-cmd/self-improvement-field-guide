@@ -1,0 +1,101 @@
+---
+import Base from '../../layouts/Base.astro';
+import tabs from '../../data/tabs.json';
+
+function chapterName(t: any) {
+  return t.sheet
+    .toLowerCase()
+    .split(' ')
+    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
+---
+
+<Base title="Chapters" description="Thirteen chapters of evidence-graded social knowledge: what the science says, how to practice it, and the words that work.">
+  <div class="container">
+    <header class="head">
+      <h1>Thirteen chapters</h1>
+      <p class="head__desc measure">
+        Seven knowledge chapters and six playbook chapters. Knowledge chapters explain; playbook
+        chapters give you the exact words.
+      </p>
+    </header>
+    <ol class="grid">
+      {tabs.map((t: any, i: number) => (
+        <li class="card">
+          <a href={`/chapters/${t.slug}`} class="card__link">
+            <span class="card__num mono">{String(i + 1).padStart(2, '0')}</span>
+            <span class="card__name">{chapterName(t)}</span>
+            <span class="card__desc">{t.description}</span>
+            <span class="card__meta">
+              {t.entries.length} entries · {t.kind === 'scenario' ? 'playbooks' : 'knowledge'}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Base>
+
+<style>
+  .head {
+    padding-block: 3.5rem 1.5rem;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    margin-bottom: 0.7rem;
+  }
+  .head__desc {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+  }
+  .card__link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    height: 100%;
+    padding: 1.2rem 1.3rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .card__link:hover {
+    border-color: var(--line-strong);
+    background: #fffef8;
+  }
+  .card__num {
+    font-size: 0.75rem;
+    color: var(--moss);
+  }
+  .card__name {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .card__link:hover .card__name {
+    color: var(--moss);
+  }
+  .card__desc {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    flex: 1;
+  }
+  .card__meta {
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    border-top: 1px dotted var(--line);
+    padding-top: 0.55rem;
+  }
+</style>

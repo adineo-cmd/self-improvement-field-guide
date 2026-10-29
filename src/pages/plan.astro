@@ -1,0 +1,275 @@
+---
+import Base from '../layouts/Base.astro';
+import plan from '../data/plan.json';
+---
+
+<Base title="The 12-week plan" description="Three phases, twelve weeks, one five-minute daily drill — plus micro-habits, a mission ladder, a 30-day tracker and the weekly review.">
+  <div class="container">
+    <header class="head">
+      <p class="kicker">ACTION_PLAN</p>
+      <h1>The twelve-week program</h1>
+      <p class="head__desc measure">{plan.intro[0]}</p>
+      <p class="head__note measure">{plan.intro[1]}</p>
+    </header>
+
+    {plan.phases.map((phase: any) => (
+      <section class="phase" aria-labelledby={`p${phase.range.replace(/\W+/g, '')}`}>
+        <h2 id={`p${phase.range.replace(/\W+/g, '')}`}>
+          {phase.title} <span class="phase__range">weeks {phase.range}</span>
+        </h2>
+        <ol class="weeks">
+          {phase.weeks.map((w: any) => (
+            <li class="week">
+              <div class="week__when">
+                <span class="week__num">{w.week}</span>
+              </div>
+              <div class="week__main">
+                <h3>{w.theme}</h3>
+                <dl class="week__tasks">
+                  <div><dt>Daily drill</dt><dd>{w.drill}</dd></div>
+                  <div><dt>Social mission</dt><dd>{w.mission}</dd></div>
+                  <div><dt>Body task</dt><dd>{w.body}</dd></div>
+                  <div><dt>Brain task</dt><dd>{w.brain}</dd></div>
+                  <div><dt>Culture bite</dt><dd>{w.culture}</dd></div>
+                </dl>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+
+    <section class="aux">
+      <div class="aux__block">
+        <h2>Micro-habit menu</h2>
+        <p class="aux__note">Ten two-minute habits; pick two, not ten.</p>
+        <ol class="habits">
+          {plan.microHabits.map((h: any) => (
+            <li><strong>{h.area}</strong> — {h.habit}</li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="aux__block">
+        <h2>Mission ladder</h2>
+        <p class="aux__note">Climb one rung at a time; each level is a safe rep.</p>
+        <ol class="ladder">
+          {plan.missionLadder.map((m: any) => (
+            <li>
+              <span class="ladder__level">{m.level}</span>
+              <span class="ladder__body">
+                <strong>{m.mission}</strong>
+                <em>{m.why}</em>
+              </span>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="aux__block">
+        <h2>30-day tracker</h2>
+        <p class="aux__note">Tick one cell a day; the streak is the point.</p>
+        <ul class="tracker">
+          {plan.tracker.map((t: string) => (
+            <li>{t}<span class="tracker__days" aria-hidden="true">{Array.from({ length: 30 }, () => <i></i>)}</span></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="aux__block">
+        <h2>Weekly review</h2>
+        <p class="aux__note">Six questions, once a week, written down.</p>
+        <ol class="review">
+          {plan.review.map((q: any) => (
+            <li>{q.q}</li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .head {
+    padding-block: 3.5rem 1rem;
+  }
+  .kicker {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    margin-bottom: 0.7rem;
+  }
+  .head__desc {
+    font-size: 1.08rem;
+  }
+  .head__note {
+    color: var(--ink-soft);
+    margin-top: 0.5rem;
+  }
+  .phase {
+    margin-top: 3rem;
+  }
+  .phase h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .phase__range {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--ink-soft);
+    letter-spacing: 0.03em;
+  }
+  .weeks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .week {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 1.4rem;
+    padding-block: 1.3rem;
+    border-top: 1px solid var(--line-strong);
+  }
+  .week__num {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--moss);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .week h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .week__tasks {
+    margin: 0;
+    display: grid;
+    gap: 0.45rem;
+  }
+  .week__tasks div {
+    display: grid;
+    grid-template-columns: 9.5rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+  }
+  .week__tasks dt {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .week__tasks dd {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  @media (max-width: 680px) {
+    .week {
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+    }
+    .week__tasks div {
+      grid-template-columns: 1fr;
+      gap: 0.1rem;
+    }
+  }
+
+  .aux {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  @media (max-width: 900px) {
+    .aux {
+      grid-template-columns: 1fr;
+    }
+  }
+  .aux__block {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 1.4rem 1.5rem;
+  }
+  .aux__block h2 {
+    font-size: 1.45rem;
+  }
+  .aux__note {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin: 0.3rem 0 1rem;
+  }
+  .habits {
+    margin: 0;
+    padding-left: 1.3rem;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.94rem;
+  }
+  .ladder {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+  .ladder li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 0.8rem;
+  }
+  .ladder__level {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--moss);
+  }
+  .ladder__body {
+    display: grid;
+    gap: 0.1rem;
+    font-size: 0.94rem;
+  }
+  .ladder__body em {
+    color: var(--ink-soft);
+    font-size: 0.86rem;
+  }
+  .tracker {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .tracker li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .tracker__days {
+    display: grid;
+    grid-template-columns: repeat(15, 0.55rem);
+    gap: 0.18rem;
+  }
+  .tracker__days i {
+    display: block;
+    width: 0.55rem;
+    height: 0.55rem;
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+  }
+  .review {
+    margin: 0;
+    padding-left: 1.3rem;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.94rem;
+  }
+</style>

@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import Strength from '../components/Strength.astro';
+import readme from '../data/readme.json';
+
+const legend = readme.blocks.find((b: any) => b.title.toLowerCase() === 'evidence legend');
+const ruleNames = ['the rules', 'safety & limits', 'how to get results', 'how to run a scenario', 'scenario tabs'];
+const rules = readme.blocks.filter((b: any) => ruleNames.includes(b.title.toLowerCase()));
+const introNames = ['what this is', 'how to use it'];
+const intro = readme.blocks.filter((b: any) => introNames.includes(b.title.toLowerCase()));
+---
+
+<Base title="How to use this guide" description="What the guide is, how to run a scenario, what the evidence labels mean, and the safety rules.">
+  <div class="container">
+    <header class="head">
+      <p class="kicker">READ ME FIRST</p>
+      <h1>How to use this guide</h1>
+    </header>
+
+    <div class="body">
+      {intro.map((b: any) => (
+        <section class="block">
+          <h2>{b.title}</h2>
+          <p class="block__text">{b.text}</p>
+        </section>
+      ))}
+
+      <section class="block">
+        <h2>How much to trust a row</h2>
+        <ul class="legend">
+          <li><Strength strength="Strong" /> many good studies agree</li>
+          <li><Strength strength="Moderate" /> some good evidence, or mixed results</li>
+          <li><Strength strength="Mixed" /> the literature genuinely disagrees</li>
+          <li><Strength strength="Emerging" /> promising but young — hold it loosely</li>
+          <li><Strength strength="Myth" /> popular and wrong; the tests failed</li>
+        </ul>
+      </section>
+
+      {rules.map((b: any) => (
+        <section class="block">
+          <h2>{b.title}</h2>
+          <p class="block__text preline">{b.text}</p>
+        </section>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .head {
+    padding-block: 3.5rem 1rem;
+  }
+  .kicker {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+  }
+  .body {
+    max-width: 74ch;
+  }
+  .block {
+    padding-block: 1.8rem 0.4rem;
+  }
+  .block + .block {
+    border-top: 1px solid var(--line);
+  }
+  h2 {
+    font-size: 1.65rem;
+    margin-bottom: 0.7rem;
+  }
+  .block__text {
+    color: var(--ink);
+    max-width: 68ch;
+  }
+  .preline {
+    white-space: pre-line;
+  }
+  .legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.7rem;
+  }
+  .legend li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .legend :global(.stamp) {
+    min-width: 6.2rem;
+    text-align: center;
+  }
+</style>

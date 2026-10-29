@@ -1,0 +1,303 @@
+---
+import Base from '../layouts/Base.astro';
+import Strength from '../components/Strength.astro';
+import { site } from '../data/site';
+import tabs from '../data/tabs.json';
+import readme from '../data/readme.json';
+import plan from '../data/plan.json';
+import sources from '../data/sources.json';
+
+const totalEntries = tabs.reduce((n: number, t: any) => n + t.entries.length, 0);
+const strong = tabs.reduce(
+  (n: number, t: any) => n + t.entries.filter((e: any) => e.strength === 'Strong').length,
+  0
+);
+const weakSpot = readme.blocks.find((b: any) => b.title.toLowerCase() === 'find your weak spot');
+
+function chapterName(t: any) {
+  return t.sheet
+    .toLowerCase()
+    .split(' ')
+    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
+function slugify(s: string) {
+  return s
+    .toLowerCase()
+    .replace(/&/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+---
+
+<Base>
+  <div class="container">
+    <section class="hero">
+      <p class="hero__kicker">A field guide to being better in company</p>
+      <h1>What the science says,<br /> and the words to say.</h1>
+      <p class="hero__lede measure">
+        {readme.intro[0]} Pick the chapter where you are weakest and start there — one drill at a
+        time, two minutes a day beats two hours a month.
+      </p>
+      <div class="hero__stats">
+        <span><strong>{totalEntries}</strong> graded findings</span>
+        <span><strong>{strong}</strong> with strong evidence</span>
+        <span><strong>{plan.phases.reduce((n: number, p: any) => n + p.weeks.length, 0)}-week</strong> practice plan</span>
+        <span><strong>{sources.studies.length}</strong> studies cited</span>
+      </div>
+    </section>
+
+    {weakSpot && (
+      <section class="finder" aria-labelledby="finder">
+        <h2 id="finder">Find your weak spot</h2>
+        <p class="finder__note">Start from the symptom, not the chapter.</p>
+        <ul class="finder__list">
+          {weakSpot.text.split('\n').map((line: string) => {
+            const [symptom, where] = line.split('->').map((s: string) => s.trim());
+            const refs = (where ?? '').split(' and ').map((t: string) => t.trim()).filter(Boolean);
+            return (
+              <li>
+                <span class="finder__symptom">{symptom}</span>
+                <span class="finder__dots" aria-hidden="true"></span>
+                <span class="finder__tabs">
+                  {refs.map((t: string) => (
+                    <a href={`/chapters/${slugify(t)}`} class="finder__tab">{chapterName({ sheet: t })}</a>
+                  ))}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+
+    <section class="contents" aria-labelledby="contents">
+      <h2 id="contents">Contents</h2>
+      <ol class="toc">
+        {tabs.map((t: any) => (
+          <li>
+            <a href={`/chapters/${t.slug}`} class="toc__row">
+              <span class="toc__num">{String(tabs.indexOf(t) + 1).padStart(2, '0')}</span>
+              <span class="toc__title">{chapterName(t)}</span>
+              <span class="toc__dots" aria-hidden="true"></span>
+              <span class="toc__kind">{t.kind === 'scenario' ? 'playbooks' : 'knowledge'}</span>
+              <span class="toc__count">{t.entries.length} entries</span>
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="/plan" class="toc__row toc__row--aux">
+            <span class="toc__num">＋</span>
+            <span class="toc__title">The 12-week plan</span>
+            <span class="toc__dots" aria-hidden="true"></span>
+            <span class="toc__kind">program</span>
+            <span class="toc__count">{plan.phases.reduce((n: number, p: any) => n + p.weeks.length, 0)} weeks</span>
+          </a>
+        </li>
+        <li>
+          <a href="/sources" class="toc__row toc__row--aux">
+            <span class="toc__num">＋</span>
+            <span class="toc__title">Sources</span>
+            <span class="toc__dots" aria-hidden="true"></span>
+            <span class="toc__kind">bibliography</span>
+            <span class="toc__count">{sources.studies.length} studies</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="trust" aria-labelledby="trust">
+      <h2 id="trust">How much to trust a row</h2>
+      <ul class="trust__list">
+        <li><Strength strength="Strong" /> many good studies agree</li>
+        <li><Strength strength="Moderate" /> some good evidence, or mixed results</li>
+        <li><Strength strength="Mixed" /> the literature genuinely disagrees</li>
+        <li><Strength strength="Emerging" /> promising but young — hold it loosely</li>
+        <li><Strength strength="Myth" /> popular and wrong; the tests failed</li>
+      </ul>
+      <p class="trust__note">
+        Every entry also tells you what to practice and what to stop believing.
+      </p>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    padding-block: 4.5rem 3rem;
+  }
+  .hero__kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.7rem, 6.5vw, 4.8rem);
+    margin-bottom: 1.1rem;
+  }
+  .hero__lede {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    margin-bottom: 1.6rem;
+  }
+  .hero__stats {
+    display: flex;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    border-block: 1px solid var(--line);
+    padding-block: 0.75rem;
+  }
+  .hero__stats strong {
+    color: var(--ink);
+  }
+
+  .finder {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: clamp(1.2rem, 3vw, 2rem);
+    margin-bottom: 3.5rem;
+  }
+  .finder h2 {
+    font-size: 1.7rem;
+  }
+  .finder__note {
+    color: var(--ink-soft);
+    margin: 0.3rem 0 1.2rem;
+  }
+  .finder__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+  }
+  .finder__list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+  .finder__symptom {
+    font-size: 0.98rem;
+  }
+  .finder__dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--line-strong);
+    transform: translateY(-0.28em);
+    min-width: 2rem;
+  }
+  .finder__tabs {
+    display: inline-flex;
+    gap: 0.8rem;
+    white-space: nowrap;
+  }
+  .finder__tab {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--moss);
+    text-decoration: none;
+  }
+  .finder__tab:hover {
+    text-decoration: underline;
+  }
+
+  .contents {
+    margin-bottom: 3.5rem;
+  }
+  .contents h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+  }
+  .toc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line-strong);
+  }
+  .toc li {
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .toc__row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    padding-block: 0.85rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .toc__num {
+    font-size: 0.78rem;
+    color: var(--moss);
+    min-width: 1.6rem;
+  }
+  .toc__title {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: 1.35rem;
+    line-height: 1.1;
+  }
+  .toc__row:hover .toc__title {
+    color: var(--moss);
+  }
+  .toc__dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--line-strong);
+    transform: translateY(-0.3em);
+    min-width: 2rem;
+  }
+  .toc__kind {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .toc__count {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .toc__row--aux .toc__title {
+    color: var(--ink-soft);
+  }
+  @media (max-width: 640px) {
+    .toc__kind,
+    .toc__count {
+      display: none;
+    }
+  }
+
+  .trust {
+    background: var(--jacket);
+    color: var(--paper);
+    padding: clamp(1.4rem, 3vw, 2.2rem);
+  }
+  .trust h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+  }
+  .trust__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.8rem;
+  }
+  .trust__list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.98rem;
+  }
+  .trust__list :global(.stamp) {
+    min-width: 6.2rem;
+    text-align: center;
+  }
+  .trust__note {
+    margin-top: 1.2rem;
+    color: rgba(241, 239, 227, 0.6);
+    font-size: 0.9rem;
+  }
+</style>

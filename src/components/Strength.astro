@@ -1,0 +1,50 @@
+---
+import { strengthTone } from '../data/site';
+
+interface Props {
+  strength?: string;
+}
+const { strength = '' } = Astro.props;
+const tone = strengthTone[strength] ?? '';
+---
+
+{
+  strength ? (
+    <span class:list={['stamp', `stamp--${tone}`]} title={`Evidence: ${strength}`}>
+      {strength}
+    </span>
+  ) : null
+}
+
+<style>
+  .stamp {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0.42em 0.6em 0.36em;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+    transform: rotate(-2deg);
+    white-space: nowrap;
+  }
+  .stamp--strong {
+    color: var(--strong);
+  }
+  .stamp--moderate {
+    color: var(--moderate);
+  }
+  .stamp--mixed {
+    color: var(--mixed);
+  }
+  .stamp--emerging {
+    color: var(--emerging);
+  }
+  .stamp--myth {
+    color: var(--myth);
+    background: color-mix(in srgb, var(--myth) 8%, transparent);
+  }
+</style>

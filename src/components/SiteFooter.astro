@@ -1,0 +1,67 @@
+---
+import { site } from '../data/site';
+---
+
+<footer class="foot">
+  <div class="container foot__inner">
+    <div>
+      <p class="foot__name">The Field Guide</p>
+      <p class="foot__tag">{site.tagline}</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul class="foot__nav">
+        {site.nav.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+  <div class="container foot__legal">
+    <p>{site.disclaimer}</p>
+  </div>
+</footer>
+
+<style>
+  .foot {
+    margin-top: 5rem;
+    background: var(--jacket);
+    color: var(--paper);
+  }
+  .foot__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-block: 2.4rem 1.2rem;
+  }
+  .foot__name {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 60, 'WONK' 1;
+    font-size: 1.4rem;
+  }
+  .foot__tag {
+    color: rgba(241, 239, 227, 0.6);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+  }
+  .foot__nav {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.92rem;
+  }
+  .foot__nav a {
+    color: rgba(241, 239, 227, 0.75);
+  }
+  .foot__legal {
+    border-top: 1px solid rgba(241, 239, 227, 0.16);
+    padding-block: 1.1rem 2.2rem;
+    color: rgba(241, 239, 227, 0.55);
+    font-size: 0.82rem;
+    max-width: 76ch;
+  }
+</style>

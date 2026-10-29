@@ -1,0 +1,149 @@
+---
+import Base from '../../layouts/Base.astro';
+import Entry from '../../components/Entry.astro';
+import tabs from '../../data/tabs.json';
+
+export function getStaticPaths() {
+  return tabs.map((t: any) => ({ params: { slug: t.slug }, props: { tab: t } }));
+}
+
+const { tab } = Astro.props;
+
+function chapterName(t: any) {
+  return t.sheet
+    .toLowerCase()
+    .split(' ')
+    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
+function anchor(title: string, num: number) {
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  return `g-${slug || 'general'}-${num}`;
+}
+const name = chapterName(tab);
+const idx = tabs.indexOf(tab);
+const prev = tabs[idx - 1];
+const next = tabs[idx + 1];
+
+// group entries by their section divider
+const groups: { title: string; entries: any[] }[] = [];
+for (const e of tab.entries) {
+  const g = groups[groups.length - 1];
+  if (!g || g.title !== e.section) {
+    groups.push({ title: e.section, entries: [e] });
+  } else {
+    g.entries.push(e);
+  }
+}
+---
+
+<Base title={name} description={tab.description}>
+  <div class="container chapter">
+    <header class="chapter__head">
+      <p class="chapter__crumb">
+        <a href="/chapters">Chapters</a>
+        <span aria-hidden="true"> / </span>
+        <span class="mono">{String(idx + 1).padStart(2, '0')}</span>
+      </p>
+      <h1>{name}</h1>
+      <p class="chapter__desc measure">{tab.description}</p>
+      {tab.hint && <p class="chapter__hint">{tab.hint}</p>}
+      <nav class="chapter__sections" aria-label="Sections in this chapter">
+        {groups.map((g) => (
+          <a href={`#${anchor(g.title, g.entries[0].num)}`}>{g.title || 'General'}</a>
+        ))}
+      </nav>
+    </header>
+
+    {groups.map((g) => (
+      <section class="group" id={anchor(g.title, g.entries[0].num)}>
+        {g.title && <h2 class="group__title">{g.title}</h2>}
+        <div class="group__entries">
+          {g.entries.map((e: any) => (
+            <Entry entry={e} kind={tab.kind} />
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <nav class="pager" aria-label="Chapters">
+      {prev && <a href={`/chapters/${prev.slug}`} rel="prev">← {chapterName(prev)}</a>}
+      <a href="/chapters" rel="index">All chapters</a>
+      {next && <a href={`/chapters/${next.slug}`} rel="next">{chapterName(next)} →</a>}
+    </nav>
+  </div>
+</Base>
+
+<style>
+  .chapter {
+    padding-block: 3rem 1rem;
+  }
+  .chapter__crumb {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-bottom: 1rem;
+  }
+  .chapter__crumb a {
+    color: var(--ink-soft);
+  }
+  .chapter h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    margin-bottom: 0.7rem;
+  }
+  .chapter__desc {
+    color: var(--ink-soft);
+    font-size: 1.08rem;
+  }
+  .chapter__hint {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .chapter__sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.2rem;
+    margin-top: 1.4rem;
+    padding-block: 0.7rem;
+    border-block: 1px solid var(--line);
+    font-size: 0.85rem;
+  }
+  .chapter__sections a {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .chapter__sections a:hover {
+    color: var(--moss);
+  }
+  .group {
+    margin-top: 2.6rem;
+    scroll-margin-top: 4rem;
+  }
+  .group__title {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--line-strong);
+    margin-bottom: 1.2rem;
+  }
+  .group__entries {
+    display: grid;
+    gap: 1.1rem;
+  }
+  .pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--line-strong);
+    font-size: 0.92rem;
+  }
+  .pager a {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .pager a:hover {
+    color: var(--moss);
+  }
+</style>

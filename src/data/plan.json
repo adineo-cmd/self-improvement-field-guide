@@ -1,0 +1,294 @@
+{
+ "intro": [
+  "Your 12-week program, daily micro-habits, the mission ladder, a 30-day tracker, and the weekly review. Start on one row; never all at once.",
+  "How to run the plan: do the 5-minute drill from the current week daily, tick the 30-day tracker with the checkmark character, and answer the weekly review."
+ ],
+ "phases": [
+  {
+   "title": "Social Basics",
+   "range": "WEEKS 1-4",
+   "weeks": [
+    {
+     "num": 1,
+     "week": "Week 1",
+     "theme": "Eye contact and smile",
+     "drill": "Hold calm eye contact for three seconds and smile at one person.",
+     "mission": "Greet five people today and notice how each one responds.",
+     "body": "Stand tall and unclench your jaw before every interaction.",
+     "brain": "Write one sentence about a moment when someone smiled back.",
+     "culture": "Read one page about how first impressions form."
+    },
+    {
+     "num": 2,
+     "week": "Week 2",
+     "theme": "Small talk with strangers",
+     "drill": "Ask one stranger a simple question about the place you are in.",
+     "mission": "Start three short chats at a cafe, shop, or gym.",
+     "body": "Walk 20 minutes outdoors and greet one passerby.",
+     "brain": "Keep a list of three easy opening questions that fit almost anywhere.",
+     "culture": "Listen to a ten-minute podcast about everyday conversation."
+    },
+    {
+     "num": 3,
+     "week": "Week 3",
+     "theme": "Active listening",
+     "drill": "Paraphrase the last thing someone said before you reply.",
+     "mission": "Have one ten-minute talk where you ask two follow-up questions.",
+     "body": "Put your phone away and face the speaker during one meal.",
+     "brain": "Write down one thing you learned from each real conversation.",
+     "culture": "Watch a short interview and note how the interviewer follows up."
+    },
+    {
+     "num": 4,
+     "week": "Week 4",
+     "theme": "First invitations",
+     "drill": "Send one low-pressure invitation text each morning.",
+     "mission": "Invite two people to a specific activity this week.",
+     "body": "Prepare a clean, simple outfit for the invitation outing.",
+     "brain": "Plan three easy outing ideas with a time and a place.",
+     "culture": "Read one page on why small favors and invitations build trust."
+    }
+   ]
+  },
+  {
+   "title": "Skills And Voice",
+   "range": "WEEKS 5-8",
+   "weeks": [
+    {
+     "num": 5,
+     "week": "Week 5",
+     "theme": "Storytelling",
+     "drill": "Tell one sixty-second story with a beginning, a turn, and an end.",
+     "mission": "Share a short story with a friend and ask for one of theirs.",
+     "body": "Practise the story aloud once while walking.",
+     "brain": "Write the three beats of one story you already love.",
+     "culture": "Watch a five-minute art video and retell its story from memory."
+    },
+    {
+     "num": 6,
+     "week": "Week 6",
+     "theme": "Body and looks sprint",
+     "drill": "Do ten push-ups or a five-minute stretch after waking.",
+     "mission": "Ask one trusted person for honest feedback on your style.",
+     "body": "Lift twice, sleep by eleven three nights, and tidy your hair or grooming.",
+     "brain": "Track sleep hours and morning energy on each day of the week.",
+     "culture": "Read one short article on fit, grooming, and simple style."
+    },
+    {
+     "num": 7,
+     "week": "Week 7",
+     "theme": "Negotiation and difficult ask",
+     "drill": "Practise one clear ask out loud: what, when, and why.",
+     "mission": "Make one real request you have been avoiding.",
+     "body": "Breathe out slowly for five minutes before the ask.",
+     "brain": "Write your best alternative and your walk-away point.",
+     "culture": "Listen to a fifteen-minute negotiation podcast clip."
+    },
+    {
+     "num": 8,
+     "week": "Week 8",
+     "theme": "Public skill",
+     "drill": "Explain one idea aloud for two minutes without notes.",
+     "mission": "Present or teach something to a small group.",
+     "body": "Practise posture and pace in front of a mirror once.",
+     "brain": "Make three slides or one handout with one idea each.",
+     "culture": "Watch a five-minute explainer and copy its structure."
+    }
+   ]
+  },
+  {
+   "title": "Hosting And Integration",
+   "range": "WEEKS 9-12",
+   "weeks": [
+    {
+     "num": 9,
+     "week": "Week 9",
+     "theme": "Hosting",
+     "drill": "Send one friendly check-in message each day.",
+     "mission": "Organize a small hangout with three to five people.",
+     "body": "Clean and set up one room, and prepare simple food and water.",
+     "brain": "Write a short plan: arrival, activity, food, and end time.",
+     "culture": "Learn one dinner-party fact you can share naturally."
+    },
+    {
+     "num": 10,
+     "week": "Week 10",
+     "theme": "Culture week",
+     "drill": "Read ten minutes or watch one short art video.",
+     "mission": "Visit a museum or gallery and talk about one work.",
+     "body": "Walk through the museum slowly for forty-five minutes.",
+     "brain": "Write three sentences about one artwork from memory.",
+     "culture": "Finish one short book or one long chapter."
+    },
+    {
+     "num": 11,
+     "week": "Week 11",
+     "theme": "Hard conversation",
+     "drill": "Write one boundary sentence: I need this, or I will not accept that.",
+     "mission": "Have one honest conversation you have been postponing.",
+     "body": "Sleep well and eat before the talk, and avoid alcohol.",
+     "brain": "Write the other person's view in two fair sentences.",
+     "culture": "Read one short piece on repair after conflict."
+    },
+    {
+     "num": 12,
+     "week": "Week 12",
+     "theme": "Integration and review",
+     "drill": "Review your tracker and tick one win each morning.",
+     "mission": "Thank two people who helped you this quarter.",
+     "body": "Book a checkup or a workout plan for the next month.",
+     "brain": "Write a one-page review: wins, lessons, and three next goals.",
+     "culture": "Pick your next book and your next museum visit."
+    }
+   ]
+  }
+ ],
+ "microHabits": [
+  {
+   "n": 1,
+   "area": "Posture",
+   "habit": "Stand tall and reset your shoulders once an hour."
+  },
+  {
+   "n": 2,
+   "area": "Breathing",
+   "habit": "Take five slow breaths with long exhales before a hard task."
+  },
+  {
+   "n": 3,
+   "area": "Journaling",
+   "habit": "Write two lines about the day's strongest feeling."
+  },
+  {
+   "n": 4,
+   "area": "Gym",
+   "habit": "Do one set of push-ups or squats after waking."
+  },
+  {
+   "n": 5,
+   "area": "Sleep time",
+   "habit": "Set a 10:30 pm alarm and turn lights out by 11."
+  },
+  {
+   "n": 6,
+   "area": "Reading",
+   "habit": "Read two pages of a real book before bed."
+  },
+  {
+   "n": 7,
+   "area": "Gratitude text",
+   "habit": "Send one short thank-you text to a different person."
+  },
+  {
+   "n": 8,
+   "area": "One question a day",
+   "habit": "Ask one person a genuine question and listen to the answer."
+  },
+  {
+   "n": 9,
+   "area": "Walk",
+   "habit": "Walk for two minutes outdoors after lunch."
+  },
+  {
+   "n": 10,
+   "area": "Phone-free meal",
+   "habit": "Eat one meal a day with your phone in another room."
+  }
+ ],
+ "missionLadder": [
+  {
+   "n": 1,
+   "level": "1",
+   "mission": "Make eye contact and smile at one person.",
+   "why": "Exposure: a tiny safe rep teaches the brain that social contact is not a threat."
+  },
+  {
+   "n": 2,
+   "level": "2",
+   "mission": "Say a quick hello to one stranger.",
+   "why": "Mere exposure: repeated neutral contact makes the same action feel more familiar and less risky."
+  },
+  {
+   "n": 3,
+   "level": "3",
+   "mission": "Ask a stranger one simple question.",
+   "why": "Behavioral rehearsal: practising the skill at low stakes builds a script you can reuse."
+  },
+  {
+   "n": 4,
+   "level": "4",
+   "mission": "Have a two-minute chat with a stranger.",
+   "why": "Successive approximation: each small step makes the next, slightly harder step easier to start."
+  },
+  {
+   "n": 5,
+   "level": "5",
+   "mission": "Invite an acquaintance for coffee.",
+   "why": "Mastery experiences: completing a real invitation builds self-efficacy, the belief that you can do it again."
+  },
+  {
+   "n": 6,
+   "level": "6",
+   "mission": "Share one honest story with a friend.",
+   "why": "Self-disclosure and reciprocity: gradual openness invites openness back and deepens trust."
+  },
+  {
+   "n": 7,
+   "level": "7",
+   "mission": "Make a clear ask or negotiate one small thing.",
+   "why": "Exposure with feedback: surviving the ask weakens avoidance and shows that rejection is survivable."
+  },
+  {
+   "n": 8,
+   "level": "8",
+   "mission": "Give a short talk or teach a small group.",
+   "why": "Mastery plus audience feedback: visible reps turn shaky knowledge into confident performance."
+  },
+  {
+   "n": 9,
+   "level": "9",
+   "mission": "Organize a group hangout.",
+   "why": "Role rehearsal: planning and hosting practise the identity and logistics of a socially active person."
+  },
+  {
+   "n": 10,
+   "level": "10",
+   "mission": "Host a small dinner.",
+   "why": "Cumulative mastery: stacked wins make a high-pressure social role feel normal and repeatable."
+  }
+ ],
+ "tracker": [
+  "Workout",
+  "Sleep by 11",
+  "Read 10 min",
+  "Journal 2 min",
+  "Reach out to 1 person",
+  "Daily drill"
+ ],
+ "review": [
+  {
+   "n": 1,
+   "q": "What worked this week, and why?"
+  },
+  {
+   "n": 2,
+   "q": "What felt fake or forced, and what will you change?"
+  },
+  {
+   "n": 3,
+   "q": "List three wins, however small."
+  },
+  {
+   "n": 4,
+   "q": "Who did you connect with, and how did it feel?"
+  },
+  {
+   "n": 5,
+   "q": "What do your body data say about sleep, energy, and training?"
+  },
+  {
+   "n": 6,
+   "q": "What is the one change you will make next week?"
+  }
+ ]
+}

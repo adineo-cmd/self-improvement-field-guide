@@ -1,0 +1,254 @@
+---
+import Base from '../layouts/Base.astro';
+import sources from '../data/sources.json';
+
+const byTab = new Map<string, typeof sources.studies>();
+for (const s of sources.studies) {
+  const key = (s.usedIn || 'GENERAL').split(',')[0].trim().toUpperCase();
+  if (!byTab.has(key)) byTab.set(key, []);
+  byTab.get(key)!.push(s);
+}
+
+function titleCase(t: string) {
+  return t
+    .toLowerCase()
+    .split(' ')
+    .map((w) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .join(' ');
+}
+---
+
+<Base title="Sources" description="446 peer-reviewed studies, the books worth your time, free resources, and a suggested reading order.">
+  <div class="container">
+    <header class="head">
+      <p class="kicker">SOURCES</p>
+      <h1>Where it all comes from</h1>
+      <p class="head__desc measure">
+        Peer-reviewed work first, books worth your time second, free resources third — and a
+        reading order if you want the tour.
+      </p>
+    </header>
+
+    <section class="studies" aria-labelledby="studies-h">
+      <h2 id="studies-h">The studies</h2>
+      <p class="sec__note">{sources.studies.length} peer-reviewed findings, grouped by the chapter that uses them.</p>
+      {[...byTab.entries()].map(([tab, studies]) => (
+        <details class="tabgroup">
+          <summary>
+            <span class="tabgroup__name">{titleCase(tab)}</span>
+            <span class="tabgroup__count">{studies.length}</span>
+          </summary>
+          <dl class="studylist">
+            {studies.map((s: any) => (
+              <div class="study">
+                <dt>{s.name}</dt>
+                <dd>{s.finding}</dd>
+              </div>
+            ))}
+          </dl>
+        </details>
+      ))}
+    </section>
+
+    <section class="books" aria-labelledby="books-h">
+      <h2 id="books-h">Books worth your time</h2>
+      <ul class="bookgrid">
+        {sources.books.map((b: any) => (
+          <li class="book">
+            <p class="book__title">{b.title}</p>
+            <p class="book__author">{b.author}</p>
+            <p class="book__why">{b.why}</p>
+            <p class="book__area">{b.area}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="resources" aria-labelledby="res-h">
+      <h2 id="res-h">Free resources</h2>
+      <ul class="reslist">
+        {sources.resources.map((r: any) => (
+          <li>
+            <strong>{r.name}</strong>
+            <span class="res__type">{r.type}</span>
+            <span class="res__best">{r.bestFor}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="order" aria-labelledby="order-h">
+      <h2 id="order-h">Suggested reading order</h2>
+      <ol class="orderlist">
+        {sources.readingOrder.map((o: any) => (
+          <li>{o.text}</li>
+        ))}
+      </ol>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .head {
+    padding-block: 3.5rem 1rem;
+  }
+  .kicker {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    margin-bottom: 0.7rem;
+  }
+  .head__desc {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+  section {
+    margin-top: 3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .sec__note {
+    color: var(--ink-soft);
+    margin-bottom: 1.2rem;
+  }
+  .tabgroup {
+    border-top: 1px solid var(--line-strong);
+  }
+  .tabgroup summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding-block: 0.75rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  .tabgroup summary::-webkit-details-marker {
+    display: none;
+  }
+  .tabgroup summary::after {
+    content: '+';
+    font-size: 1.1rem;
+    color: var(--moss);
+  }
+  .tabgroup[open] summary::after {
+    content: '–';
+  }
+  .tabgroup__name {
+    font-weight: 600;
+  }
+  .tabgroup__count {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+  }
+  .studylist {
+    margin: 0 0 1rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .study {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+    gap: 1rem;
+    padding-block: 0.35rem;
+  }
+  .study dt {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .study dd {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 680px) {
+    .study {
+      grid-template-columns: 1fr;
+      gap: 0.1rem;
+    }
+  }
+
+  .bookgrid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1rem;
+  }
+  .book {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .book__title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+  }
+  .book__author {
+    font-size: 0.82rem;
+    color: var(--moss);
+    font-weight: 600;
+  }
+  .book__why {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    flex: 1;
+  }
+  .book__area {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-top: 1px dotted var(--line);
+    padding-top: 0.5rem;
+  }
+
+  .reslist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line-strong);
+  }
+  .reslist li {
+    display: grid;
+    grid-template-columns: 14rem 9rem 1fr;
+    gap: 1rem;
+    padding-block: 0.55rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+    align-items: baseline;
+  }
+  .res__type {
+    font-size: 0.78rem;
+    color: var(--moss);
+    font-weight: 600;
+  }
+  .res__best {
+    color: var(--ink-soft);
+  }
+  @media (max-width: 680px) {
+    .reslist li {
+      grid-template-columns: 1fr;
+      gap: 0.1rem;
+    }
+  }
+
+  .orderlist {
+    margin: 0;
+    padding-left: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+    max-width: 70ch;
+  }
+</style>

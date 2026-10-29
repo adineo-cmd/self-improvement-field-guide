@@ -1,0 +1,236 @@
+---
+import Strength from './Strength.astro';
+
+interface Entry {
+  num: number;
+  title: string;
+  section: string;
+  strength?: string;
+  science?: string;
+  studies?: string;
+  practice?: string;
+  myths?: string;
+  drill?: string;
+  resource?: string;
+  mistake?: string;
+  instead?: string;
+  words?: string;
+  why?: string;
+  know?: string;
+  story?: string;
+}
+interface Props {
+  entry: Entry;
+  kind: string;
+}
+const { entry, kind } = Astro.props;
+const id = `e${entry.num}`;
+---
+
+<article class="entry" id={id}>
+  <header class="entry__head">
+    <span class="entry__num" aria-hidden="true">{String(entry.num).padStart(3, '0')}</span>
+    <h3 class="entry__title">{entry.title}</h3>
+    <Strength strength={entry.strength} />
+  </header>
+
+  <div class="entry__body">
+    {entry.science && <p class="entry__science">{entry.science}</p>}
+
+    {kind === 'scenario' && entry.mistake && (
+      <div class="entry__swap">
+        <div class="swap">
+          <h4 class="swap__label swap__label--no">The mistake</h4>
+          <p>{entry.mistake}</p>
+        </div>
+        {entry.instead && (
+          <div class="swap">
+            <h4 class="swap__label swap__label--yes">Do this instead</h4>
+            <p>{entry.instead}</p>
+          </div>
+        )}
+      </div>
+    )}
+
+    {entry.words && (
+      <blockquote class="say" aria-label="Exact words to adapt">
+        <p class="say__label">Say it like this</p>
+        <p class="say__text">{entry.words}</p>
+      </blockquote>
+    )}
+
+    {entry.know && (
+      <div class="part">
+        <h4 class="part__label">What to know</h4>
+        <p>{entry.know}</p>
+      </div>
+    )}
+
+    {entry.story && (
+      <div class="part part--story">
+        <h4 class="part__label">A story worth keeping</h4>
+        <p>{entry.story}</p>
+      </div>
+    )}
+
+    {entry.practice && (
+      <div class="part">
+        <h4 class="part__label">In practice</h4>
+        <p class="preline">{entry.practice}</p>
+      </div>
+    )}
+
+    {entry.why && kind === 'scenario' && (
+      <div class="part">
+        <h4 class="part__label">Why it works</h4>
+        <p>{entry.why}</p>
+      </div>
+    )}
+
+    {entry.myths && (
+      <div class="part part--myth">
+        <h4 class="part__label">Myths &amp; mistakes</h4>
+        <p>{entry.myths}</p>
+      </div>
+    )}
+
+    {entry.drill && (
+      <div class="part part--drill">
+        <h4 class="part__label">One-week drill</h4>
+        <p>{entry.drill}</p>
+      </div>
+    )}
+
+    {(entry.studies || entry.resource) && (
+      <p class="entry__refs">
+        {entry.studies && <span>{entry.studies}</span>}
+        {entry.resource && <span class="entry__res">{entry.resource}</span>}
+      </p>
+    )}
+  </div>
+</article>
+
+<style>
+  .entry {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: clamp(1.1rem, 2.5vw, 1.7rem);
+    scroll-margin-top: 4.5rem;
+  }
+  .entry__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.9rem;
+  }
+  .entry__num {
+    font-size: 0.82rem;
+    color: var(--moss);
+    letter-spacing: 0.04em;
+  }
+  .entry__title {
+    font-size: 1.35rem;
+    margin-right: auto;
+  }
+  .entry__science {
+    max-width: 66ch;
+    margin-bottom: 1rem;
+  }
+  .entry__swap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 680px) {
+    .entry__swap {
+      grid-template-columns: 1fr;
+    }
+  }
+  .swap {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 0.85rem 1rem;
+  }
+  .swap__label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .swap__label--no {
+    color: var(--myth);
+  }
+  .swap__label--yes {
+    color: var(--strong);
+  }
+  .swap p {
+    font-size: 0.94rem;
+    color: var(--ink);
+  }
+  .say {
+    margin: 0 0 1rem;
+    padding: 0.9rem 1.1rem;
+    border-left: 3px solid var(--moss);
+    background: var(--paper);
+  }
+  .say__label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 0.4rem;
+  }
+  .say__text {
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    line-height: 1.45;
+    white-space: pre-line;
+  }
+  .part {
+    margin-bottom: 0.9rem;
+  }
+  .part__label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.25rem;
+  }
+  .part p {
+    font-size: 0.96rem;
+    color: var(--ink);
+    max-width: 66ch;
+  }
+  .preline {
+    white-space: pre-line;
+  }
+  .part--story p {
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+  }
+  .part--myth p {
+    color: var(--ink-soft);
+  }
+  .part--drill {
+    background: var(--paper);
+    border: 1px dashed var(--line-strong);
+    padding: 0.8rem 1rem;
+  }
+  .entry__refs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    border-top: 1px dotted var(--line);
+    padding-top: 0.7rem;
+    margin-top: 1rem;
+  }
+</style>

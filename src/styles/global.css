@@ -1,0 +1,93 @@
+@import '@fontsource-variable/dm-sans';
+@import '@fontsource-variable/fraunces';
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:where(a):where(:not([class])) {
+  color: var(--moss);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+::selection {
+  background: rgba(62, 107, 63, 0.25);
+}
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 560;
+  font-variation-settings: 'SOFT' 60, 'WONK' 1, 'opsz' 40;
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.012em;
+}
+
+p {
+  margin: 0;
+}
+
+.measure {
+  max-width: var(--measure);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+}
+
+.skip-link:focus {
+  left: 0;
+}

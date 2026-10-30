@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Strength from '../components/Strength.astro';
-import tabs from '../data/tabs.json';
+import { chapters as tabs, slugify } from '../data/chapters';
 import readme from '../data/readme.json';
 import plan from '../data/plan.json';
 import sources from '../data/sources.json';
@@ -13,20 +13,7 @@ const strong = tabs.reduce(
 );
 const weakSpot = readme.blocks.find((b: any) => b.title.toLowerCase() === 'find your weak spot');
 
-function chapterName(t: any) {
-  return t.sheet
-    .toLowerCase()
-    .split(' ')
-    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ');
-}
-function slugify(s: string) {
-  return s
-    .toLowerCase()
-    .replace(/&/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-}
+const chapterName = (t: any) => t.sheet;
 ---
 
 <Base>

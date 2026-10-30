@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Entry from '../../components/Entry.astro';
-import tabs from '../../data/tabs.json';
+import { chapters as tabs, chapterName as chapterOf } from '../../data/chapters';
 import sources from '../../data/sources.json';
 
 export function getStaticPaths() {
@@ -10,13 +10,7 @@ export function getStaticPaths() {
 
 const { tab } = Astro.props;
 
-function chapterName(t: any) {
-  return t.sheet
-    .toLowerCase()
-    .split(' ')
-    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ');
-}
+const chapterName = chapterOf;
 function anchor(title: string, num: number) {
   const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
   return `g-${slug || 'general'}-${num}`;

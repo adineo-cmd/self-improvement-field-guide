@@ -1,4 +1,4 @@
-import tabs from '../data/tabs.json';
+import { chapters as tabs } from '../data/chapters';
 import plan from '../data/plan.json';
 import sources from '../data/sources.json';
 import readme from '../data/readme.json';
@@ -11,12 +11,7 @@ interface Doc {
   keywords?: string;
 }
 
-const chapterName = (sheet: string) =>
-  sheet
-    .toLowerCase()
-    .split(' ')
-    .map((w: string) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
-    .join(' ');
+const chapterName = (sheet: string) => sheet;
 
 const documents: Doc[] = [
   { kind: 'Guide', title: 'Contents', description: 'Thirteen chapters, the weak-spot finder, and the evidence legend.', url: '/' },

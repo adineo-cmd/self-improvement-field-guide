@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import tabs from '../../data/tabs.json';
+import sources from '../../data/sources.json';
 
 function chapterName(t: any) {
   return t.sheet
@@ -8,6 +9,16 @@ function chapterName(t: any) {
     .split(' ')
     .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ');
+}
+
+function studyCount(t: any) {
+  const sheet = t.sheet.toUpperCase();
+  return sources.studies.filter((s: any) =>
+    (s.usedIn ?? '')
+      .split(',')
+      .map((x: string) => x.trim().toUpperCase())
+      .includes(sheet)
+  ).length;
 }
 ---
 
@@ -28,7 +39,7 @@ function chapterName(t: any) {
             <span class="card__name">{chapterName(t)}</span>
             <span class="card__desc">{t.description}</span>
             <span class="card__meta">
-              {t.entries.length} entries · {t.kind === 'scenario' ? 'playbooks' : 'knowledge'}
+              {t.entries.length} entries · {studyCount(t)} studies · {t.kind === 'scenario' ? 'playbooks' : 'knowledge'}
             </span>
           </a>
         </li>

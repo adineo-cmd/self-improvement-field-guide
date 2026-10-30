@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Entry from '../../components/Entry.astro';
 import tabs from '../../data/tabs.json';
+import sources from '../../data/sources.json';
 
 export function getStaticPaths() {
   return tabs.map((t: any) => ({ params: { slug: t.slug }, props: { tab: t } }));
@@ -48,6 +49,14 @@ const startHere = [...tab.entries]
   .filter((e) => e.strength && rank[e.strength] !== undefined)
   .sort((a, b) => (rank[a.strength] ?? 9) - (rank[b.strength] ?? 9))
   .slice(0, 3);
+
+// the studies behind this chapter, from the SOURCES sheet's "used in" mapping
+const chapterStudies = sources.studies.filter((s: any) =>
+  (s.usedIn ?? '')
+    .split(',')
+    .map((x: string) => x.trim().toUpperCase())
+    .includes(tab.sheet.toUpperCase())
+);
 ---
 
 <Base title={name} description={tab.description}>
@@ -92,6 +101,28 @@ const startHere = [...tab.entries]
           ))}
         </ol>
       </aside>
+    )}
+
+    {chapterStudies.length > 0 && (
+      <details class="studies">
+        <summary>
+          <span class="studies__label">The studies behind this chapter</span>
+          <span class="studies__count">{chapterStudies.length}</span>
+        </summary>
+        <dl class="studies__list">
+          {chapterStudies.slice(0, 12).map((s: any) => (
+            <div class="studies__item">
+              <dt>{s.name}</dt>
+              <dd>{s.finding}</dd>
+            </div>
+          ))}
+        </dl>
+        {chapterStudies.length > 12 && (
+          <p class="studies__more">
+            <a href="/sources">All {chapterStudies.length} in Sources →</a>
+          </p>
+        )}
+      </details>
     )}
 
     {groups.map((g) => (
@@ -298,6 +329,79 @@ const startHere = [...tab.entries]
     text-transform: uppercase;
     color: rgba(241, 239, 227, 0.55);
     white-space: nowrap;
+  }
+  .studies {
+    margin-top: 1rem;
+    background: var(--panel);
+    border: 1px solid var(--line);
+  }
+  .studies summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.8rem 1.1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  .studies summary::-webkit-details-marker {
+    display: none;
+  }
+  .studies summary::after {
+    content: '+';
+    color: var(--moss);
+    font-size: 1.1rem;
+  }
+  .studies[open] summary::after {
+    content: '–';
+  }
+  .studies__label {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .studies__count {
+    font-size: 0.8rem;
+    color: var(--moss);
+    font-weight: 700;
+  }
+  .studies__list {
+    margin: 0;
+    padding: 0.4rem 1.1rem 1rem;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 0.5rem;
+  }
+  .studies__item {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: 0.8rem;
+    padding-block: 0.3rem;
+  }
+  .studies__item dt {
+    font-weight: 600;
+    font-size: 0.86rem;
+  }
+  .studies__item dd {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+  }
+  .studies__more {
+    padding: 0 1.1rem 0.9rem;
+    font-size: 0.84rem;
+  }
+  .studies__more a {
+    color: var(--moss);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  @media (max-width: 640px) {
+    .studies__item {
+      grid-template-columns: 1fr;
+      gap: 0.05rem;
+    }
   }
   .entrywrap__related {
     display: flex;

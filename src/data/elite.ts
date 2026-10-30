@@ -7,6 +7,7 @@ import { chapter as socialCapital } from './elite/social-capital';
 import { chapter as bodyCourage } from './elite/body-courage';
 import { chapter as worldMoney } from './elite/world-money';
 import { chapter as selectionReversed } from './elite/selection-reversed';
+import { chapter as theArchitecture } from './elite/the-architecture';
 
 // Part II of the guide: the elite-curriculum chapters, hand-authored
 // (not derived from the workbook; see scripts/build_data.py for Part I).
@@ -20,4 +21,5 @@ export const eliteChapters = [
   bodyCourage,
   worldMoney,
   selectionReversed,
+  theArchitecture,
 ];

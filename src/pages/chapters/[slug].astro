@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Entry from '../../components/Entry.astro';
 import { chapters as tabs, chapterName as chapterOf } from '../../data/chapters';
+import { caseFiles } from '../../data/cases';
 import sources from '../../data/sources.json';
 
 export function getStaticPaths() {
@@ -9,6 +10,7 @@ export function getStaticPaths() {
 }
 
 const { tab } = Astro.props;
+const chapterCases = caseFiles[tab.slug];
 
 const chapterName = chapterOf;
 function anchor(title: string, num: number) {
@@ -122,12 +124,25 @@ const chapterStudies = sources.studies.filter((s: any) =>
     {groups.map((g) => (
       <section class="group" id={anchor(g.title, g.entries[0].num)}>
         {g.title && <h2 class="group__title">{g.title}</h2>}
+        {chapterCases?.sections?.[g.title] && (
+          <div class="group-case">
+            <p class="group-case__label">A real case</p>
+            <p class="group-case__text">{chapterCases.sections[g.title].case}</p>
+            <ul class="group-case__ifs">
+              {chapterCases.sections[g.title].situations.map((situation: any) => (
+                <li>
+                  <strong>If {situation.if}:</strong> {situation.then}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <div class="group__entries">
           {g.entries.map((e: any) => {
             const rel = neighbours(g.entries, e.num);
             return (
               <div class="entrywrap">
-                <Entry entry={e} kind={tab.kind} />
+                <Entry entry={e} kind={tab.kind} caseBlock={chapterCases?.entries?.[e.num]} />
                 {(rel.prev || rel.next) && (
                   <p class="entrywrap__related">
                     {rel.prev && <a href={`#e${rel.prev.num}`} rel="prev">← {rel.prev.title}</a>}
@@ -418,6 +433,43 @@ const chapterStudies = sources.studies.filter((s: any) =>
   }
   .entrywrap__related a:last-child {
     text-align: right;
+  }
+  .group-case {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--moss);
+    padding: 0.9rem 1.1rem 1rem;
+    margin-bottom: 1.2rem;
+    max-width: 60rem;
+  }
+  .group-case__label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 0.35rem;
+  }
+  .group-case__text {
+    font-size: 0.95rem;
+    max-width: 66ch;
+  }
+  .group-case__ifs {
+    list-style: none;
+    margin: 0.7rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .group-case__ifs li {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--line-strong);
+  }
+  .group-case__ifs li strong {
+    color: var(--moss-deep);
+    font-weight: 600;
   }
   .group__title {
     font-size: 1.6rem;

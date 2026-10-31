@@ -19,11 +19,16 @@ interface Entry {
   know?: string;
   story?: string;
 }
+interface CaseBlock {
+  case: string;
+  situations: { if: string; then: string }[];
+}
 interface Props {
   entry: Entry;
   kind: string;
+  caseBlock?: CaseBlock;
 }
-const { entry, kind } = Astro.props;
+const { entry, kind, caseBlock } = Astro.props;
 const id = `e${entry.num}`;
 ---
 
@@ -98,6 +103,22 @@ const id = `e${entry.num}`;
       <div class="part part--drill">
         <h4 class="part__label">One-week drill</h4>
         <p>{entry.drill}</p>
+      </div>
+    )}
+
+    {caseBlock && (
+      <div class="part part--realcase">
+        <h4 class="part__label">A real case</h4>
+        <p>{caseBlock.case}</p>
+        {caseBlock.situations && caseBlock.situations.length > 0 && (
+          <ul class="ifs">
+            {caseBlock.situations.map((situation) => (
+              <li>
+                <strong>If {situation.if}:</strong> {situation.then}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     )}
 
@@ -222,6 +243,32 @@ const id = `e${entry.num}`;
     background: var(--paper);
     border: 1px dashed var(--line-strong);
     padding: 0.8rem 1rem;
+  }
+  .part--realcase {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--moss);
+    padding: 0.85rem 1rem;
+  }
+  .part--realcase p {
+    font-size: 0.95rem;
+  }
+  .ifs {
+    list-style: none;
+    margin: 0.7rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .ifs li {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--line-strong);
+  }
+  .ifs li strong {
+    color: var(--moss-deep);
+    font-weight: 600;
   }
   .entry__refs {
     display: flex;

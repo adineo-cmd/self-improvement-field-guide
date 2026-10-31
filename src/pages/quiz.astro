@@ -26,7 +26,7 @@ for (const t of tabs) {
     .map((w: string) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
     .join(' ');
   for (const e of t.entries as any[]) {
-    const href = `/chapters/${t.slug}#e${e.num}`;
+    const href = `/self-improvement-field-guide/chapters/${t.slug}#e${e.num}`;
     if (e.myths) {
       // "Myth: ... It is several ..." → claim = the myth statement
       const claim = firstSentence(e.myths.replace(/^myth:\s*/i, ''));

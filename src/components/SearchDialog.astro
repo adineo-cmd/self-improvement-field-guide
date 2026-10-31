@@ -22,7 +22,7 @@
       <div class="search-results" id="search-results" data-search-results role="listbox" aria-label="Search results"></div>
       <p class="search-empty" data-search-empty hidden>
         Nothing found for “<span data-search-query></span>”. Try a broader word — “eye contact”,
-        “apologise”, “first date” — or <a href="/">go back to the contents</a>.
+        “apologise”, “first date” — or <a href="/self-improvement-field-guide/">go back to the contents</a>.
       </p>
     </div>
 
@@ -210,7 +210,7 @@
   async function loadDocs() {
     if (loaded) return;
     if (loading) return loading;
-    loading = fetch('/search.json')
+    loading = fetch('/self-improvement-field-guide/search.json')
       .then((res) => res.json())
       .then((data: { documents: SearchDoc[] }) => {
         docs = data.documents;

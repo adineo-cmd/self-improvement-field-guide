@@ -47,7 +47,7 @@ const chapterName = (t: any) => t.sheet;
                 <span class="finder__dots" aria-hidden="true"></span>
                 <span class="finder__tabs">
                   {refs.map((t: string) => (
-                    <a href={`/chapters/${slugify(t)}`} class="finder__tab">{chapterName({ sheet: t })}</a>
+                    <a href={`/self-improvement-field-guide/chapters/${slugify(t)}`} class="finder__tab">{chapterName({ sheet: t })}</a>
                   ))}
                 </span>
               </li>
@@ -62,7 +62,7 @@ const chapterName = (t: any) => t.sheet;
       <ol class="toc">
         {tabs.map((t: any) => (
           <li>
-            <a href={`/chapters/${t.slug}`} class="toc__row">
+            <a href={`/self-improvement-field-guide/chapters/${t.slug}`} class="toc__row">
               <span class="toc__num">{String(tabs.indexOf(t) + 1).padStart(2, '0')}</span>
               <span class="toc__title">{chapterName(t)}</span>
               <span class="toc__dots" aria-hidden="true"></span>
@@ -72,7 +72,7 @@ const chapterName = (t: any) => t.sheet;
           </li>
         ))}
         <li>
-          <a href="/plan" class="toc__row toc__row--aux">
+          <a href="/self-improvement-field-guide/plan" class="toc__row toc__row--aux">
             <span class="toc__num">＋</span>
             <span class="toc__title">The 12-week plan</span>
             <span class="toc__dots" aria-hidden="true"></span>
@@ -81,7 +81,7 @@ const chapterName = (t: any) => t.sheet;
           </a>
         </li>
         <li>
-          <a href="/sources" class="toc__row toc__row--aux">
+          <a href="/self-improvement-field-guide/sources" class="toc__row toc__row--aux">
             <span class="toc__num">＋</span>
             <span class="toc__title">Sources</span>
             <span class="toc__dots" aria-hidden="true"></span>

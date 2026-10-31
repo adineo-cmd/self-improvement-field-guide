@@ -59,7 +59,7 @@ const chapterStudies = sources.studies.filter((s: any) =>
   <div class="container chapter">
     <header class="chapter__head">
       <p class="chapter__crumb">
-        <a href="/chapters">Chapters</a>
+        <a href="/self-improvement-field-guide/chapters">Chapters</a>
         <span aria-hidden="true"> / </span>
         <span class="mono">{String(idx + 1).padStart(2, '0')}</span>
       </p>
@@ -115,7 +115,7 @@ const chapterStudies = sources.studies.filter((s: any) =>
         </dl>
         {chapterStudies.length > 12 && (
           <p class="studies__more">
-            <a href="/sources">All {chapterStudies.length} in Sources →</a>
+            <a href="/self-improvement-field-guide/sources">All {chapterStudies.length} in Sources →</a>
           </p>
         )}
       </details>
@@ -160,9 +160,9 @@ const chapterStudies = sources.studies.filter((s: any) =>
     ))}
 
     <nav class="pager" aria-label="Chapters">
-      {prev && <a href={`/chapters/${prev.slug}`} rel="prev">← {chapterName(prev)}</a>}
-      <a href="/chapters" rel="index">All chapters</a>
-      {next && <a href={`/chapters/${next.slug}`} rel="next">{chapterName(next)} →</a>}
+      {prev && <a href={`/self-improvement-field-guide/chapters/${prev.slug}`} rel="prev">← {chapterName(prev)}</a>}
+      <a href="/self-improvement-field-guide/chapters" rel="index">All chapters</a>
+      {next && <a href={`/self-improvement-field-guide/chapters/${next.slug}`} rel="next">{chapterName(next)} →</a>}
     </nav>
   </div>
 </Base>

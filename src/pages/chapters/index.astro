@@ -29,7 +29,7 @@ function studyCount(t: any) {
     <ol class="grid">
       {tabs.map((t: any, i: number) => (
         <li class="card">
-          <a href={`/chapters/${t.slug}`} class="card__link">
+          <a href={`/self-improvement-field-guide/chapters/${t.slug}`} class="card__link">
             <span class="card__num mono">{String(i + 1).padStart(2, '0')}</span>
             <span class="card__name">{chapterName(t)}</span>
             <span class="card__desc">{t.description}</span>

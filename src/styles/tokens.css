@@ -1,6 +1,7 @@
 :root {
   --jacket: #1c2b22;
   --jacket-soft: #243528;
+  --jacket-ink: #f1efe3;
   --paper: #f1efe3;
   --panel: #faf9f0;
   --ink: #232e26;
@@ -19,4 +20,25 @@
   --font-body: 'DM Sans Variable', system-ui, sans-serif;
   --container: 1240px;
   --measure: 68ch;
+}
+
+[data-theme='dark'] {
+  /* ---- dark: night field book ---- */
+  --jacket: #0e1811;
+  --jacket-soft: #16211a;
+  --jacket-ink: #f1efe3;
+  --paper: #131a15;
+  --panel: #18211b;
+  --ink: #e5e3d3;
+  --ink-soft: #97a394;
+  --moss: #8fc07e;
+  --moss-deep: #a8d498;
+  --strong: #52c48d;
+  --moderate: #c9b04a;
+  --mixed: #d19055;
+  --emerging: #8ba3c4;
+  --myth: #e06a56;
+  --line: rgba(229, 227, 211, 0.14);
+  --line-strong: rgba(229, 227, 211, 0.36);
+  --focus: #8fc07e;
 }

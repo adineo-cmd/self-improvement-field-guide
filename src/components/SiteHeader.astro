@@ -30,6 +30,10 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
       <button type="button" class="jacket__search" data-search-open aria-label="Search the guide (press /)">
         search <kbd>/</kbd>
       </button>
+      <button type="button" class="jacket__theme" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="ico-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+        <svg class="ico-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      </button>
     </div>
   </div>
 </header>
@@ -49,7 +53,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
   }
   .jacket__mark {
     text-decoration: none;
-    color: var(--paper);
+    color: var(--jacket-ink);
   }
   .jacket__name {
     display: block;
@@ -88,6 +92,24 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     font-family: inherit;
     font-size: 0.68rem;
   }
+  .jacket__theme {
+    display: grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    color: rgba(241, 239, 227, 0.75);
+    background: rgba(241, 239, 227, 0.08);
+    border: 1px solid rgba(241, 239, 227, 0.3);
+    cursor: pointer;
+    padding: 0;
+  }
+  .jacket__theme:hover {
+    color: var(--jacket-ink);
+    border-color: rgba(241, 239, 227, 0.6);
+  }
+  .jacket__theme .ico-sun {
+    display: none;
+  }
   .jacket__nav {
     display: flex;
     flex-wrap: wrap;
@@ -104,10 +126,10 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     border-bottom: 2px solid transparent;
   }
   .jacket__nav a:hover {
-    color: var(--paper);
+    color: var(--jacket-ink);
   }
   .jacket__nav a.active {
-    color: var(--paper);
+    color: var(--jacket-ink);
     border-bottom-color: #9ec48f;
   }
 </style>
